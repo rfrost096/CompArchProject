@@ -1,0 +1,1 @@
+cp -f ModularBoomConfig.scala chipyard/generators/chipyard/src/main/scala/config
