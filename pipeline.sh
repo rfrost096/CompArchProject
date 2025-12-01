@@ -238,22 +238,22 @@ load_config_env() {
 "
 }
 
-# for config in "${CONFIG_LIST[@]}"; do
-#     load_config_env "$config"
-#     validate_options
-# done
-
-# for config in "${CONFIG_LIST[@]}"; do
-#     load_config_env "$config"
-#     verify_config
-# done
-
-# for config in "${CONFIG_LIST[@]}"; do
-#     load_config_env "$config"
-#     run_analysis
-# done
+for config in "${CONFIG_LIST[@]}"; do
+    load_config_env "$config"
+    validate_options
+done
 
 for config in "${CONFIG_LIST[@]}"; do
     load_config_env "$config"
-    size_analysis
+    verify_config
 done
+
+for config in "${CONFIG_LIST[@]}"; do
+    load_config_env "$config"
+    run_analysis
+done
+
+# for config in "${CONFIG_LIST[@]}"; do
+#     load_config_env "$config"
+#     size_analysis
+# done
