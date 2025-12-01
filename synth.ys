@@ -1,0 +1,6 @@
+read_verilog -sv -D SYNTHESIS ../../..//chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral-size/*.sv
+read_verilog -D SYNTHESIS ../../..//chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral-size/*.v
+hierarchy -top DigitalTop
+synth
+abc -g cmos2
+stat
