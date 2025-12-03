@@ -1,10 +1,10 @@
 
 # This script should be run from within CompArchProject/chipyard/sims/verilator
-BINARY_NAME="multiplication_boom"
+BINARY_NAME="dijkstra_boom"
 
 CONFIG_LIST=(
-    "64 4 8 medium medium medium TAGELBPD"
-    # "64 4 8 medium large  medium TAGELBPD"
+    # "64 4 8 medium medium medium TAGELBPD"
+    "64 4 8 medium large  medium TAGELBPD"
 )
 
 CACHE_LINE_SIZE_OPTIONS=(32 64 128)
@@ -30,21 +30,31 @@ VERIFY_FAILED_CONFIGS_FILE="${CONFIG_DIRECTORY}failed_configs.txt"
 VERIFY_LOGS_DIRECTORY="${CONFIG_DIRECTORY}verify_logs"
 VERIFY_LOG_PREFIX="verify_log_"
 
+mkdir -p "$VERIFY_LOGS_DIRECTORY"
+
+touch "$VERIFY_SUCCEED_CONFIGS_FILE"
+touch "$VERIFY_FAILED_CONFIGS_FILE"
+
+VERILOG_LOGS_DIRECTORY="${CONFIG_DIRECTORY}verilog_logs"
+VERILOG_LOGS_PREFIX="verilog_log_"
+
+mkdir -p "$VERILOG_LOGS_DIRECTORY"
+
 CONFIG_SIZE_FILE="${CONFIG_DIRECTORY}config_sizes.txt"
 CONFIG_SIZE_LOGS_DIRECTORY="${CONFIG_DIRECTORY}size_logs"
 CONFIG_SIZE_PREFIX="size_log_"
 
-mkdir -p "$VERIFY_LOGS_DIRECTORY"
 mkdir -p "$CONFIG_SIZE_LOGS_DIRECTORY"
 
-touch "$VERIFY_SUCCEED_CONFIGS_FILE"
-touch "$VERIFY_FAILED_CONFIGS_FILE"
+touch "$CONFIG_SIZE_FILE"
 
 RUN_RESULTS_FILE="${BINARY_OUTPUT_DIRECTORY}results.txt"
 RUN_LOGS_DIRECTORY="${BINARY_OUTPUT_DIRECTORY}logs"
 RUN_LOG_PREFIX="run_log_"
 
 mkdir -p "$RUN_LOGS_DIRECTORY"
+
+touch "$RUN_RESULTS_FILE"
 
 VERILOG_DIRECTORY="${PROJECT_DIRECTORY}/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral"
 SIZE_VERILOG_DIRECTORY="${PROJECT_DIRECTORY}/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral-size"
@@ -94,7 +104,7 @@ verify_config() {
 
         local CONFIG_LOG="$VERIFY_LOGS_DIRECTORY/${VERIFY_LOG_PREFIX}${CONFIG_ID}.txt"
 
-        rm $CONFIG_LOG
+        rm -f "$CONFIG_LOG"
 
         if make -B CONFIG=ModularBoomConfig firrtl > "$CONFIG_LOG" 2>&1; then
             echo "verify succeded$CONFIG_NAME"
@@ -124,17 +134,19 @@ verify_config() {
 }
 
 run_analysis() {
-    echo "running$CONFIG_NAME"
-
-    local RUN_LOG="${RUN_LOGS_DIRECTORY}/${RUN_LOG_PREFIX}${CONFIG_ID}.txt"
 
     if ! grep -q "ID: $CONFIG_ID" "$RUN_RESULTS_FILE"; then
 
-        rm $RUN_LOG
+        echo "running$CONFIG_NAME"
+
+        local RUN_LOG="${RUN_LOGS_DIRECTORY}/${RUN_LOG_PREFIX}${CONFIG_ID}.txt"
+
+        rm -f $RUN_LOG
 
         make -B CONFIG=ModularBoomConfig -j4 run-binary BINARY=$(realpath "$BINARY_PATH") > "$RUN_LOG" 2>&1
 
         if grep -q "\[UART\] UART0 is here (stdin/stdout)\." "$RUN_LOG"; then
+            echo "run succeeded\n$CONFIG_NAME"
             {
                 echo "DATE: $(date)"
                 echo "ID: $CONFIG_ID"
@@ -153,19 +165,23 @@ run_analysis() {
             exit 1
         fi
     else
-        echo "Config workload combination already analyzed"
+        echo "Config workload combination already analyzed$CONFIG_NAME"
     fi
 }
 
 size_analysis() {
 
-    echo "size analysis$CONFIG_NAME"
-
     if ! grep -q "ID: $CONFIG_ID" "$CONFIG_SIZE_FILE"; then
 
-        make -B CONFIG=ModularBoomConfig verilog
+        echo "size analysis$CONFIG_NAME"
 
-        rm -r $SIZE_VERILOG_DIRECTORY
+        local VERILOG_LOG="${VERILOG_LOGS_DIRECTORY}/${VERILOG_LOG_PREFIX}${CONFIG_ID}.txt"
+
+        rm -f $VERILOG_LOG
+
+        make -B CONFIG=ModularBoomConfig verilog > "$VERILOG_LOG" 2>&1
+
+        rm -rf $SIZE_VERILOG_DIRECTORY
 
         cp -r $VERILOG_DIRECTORY $SIZE_VERILOG_DIRECTORY
 
@@ -190,7 +206,7 @@ EOF
 
         local SIZE_LOG="${CONFIG_SIZE_LOGS_DIRECTORY}/${CONFIG_SIZE_PREFIX}${CONFIG_ID}.txt"
 
-        rm "$SIZE_LOG"
+        rm -f "$SIZE_LOG"
 
         conda run --no-capture-output -p /home/ryan/miniforge3/envs/yosys_env yosys $YS_SCRIPT > "$SIZE_LOG" 2>&1
 
@@ -211,7 +227,7 @@ EOF
             echo "size analysis failed$CONFIG_NAME"
         fi
     else
-        echo "size analysis already performed"
+        echo "size analysis already performed$CONFIG_NAME"
     fi
 }
 
@@ -253,7 +269,7 @@ for config in "${CONFIG_LIST[@]}"; do
     run_analysis
 done
 
-# for config in "${CONFIG_LIST[@]}"; do
-#     load_config_env "$config"
-#     size_analysis
-# done
+for config in "${CONFIG_LIST[@]}"; do
+    load_config_env "$config"
+    size_analysis
+done
