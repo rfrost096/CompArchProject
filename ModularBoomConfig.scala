@@ -105,6 +105,9 @@ class WithModularBoom(cache_line_size: Int, cache_associativity: Int, num_tlb_wa
     }) ++
 
     new Config((site, here, up) => {
+
+        case CacheBlockBytes => cache_line_size
+
         case TilesLocated(InSubsystem) => {
             val prev = up(TilesLocated(InSubsystem), site)
             val idOffset = up(NumTiles)
@@ -264,6 +267,7 @@ class WithModularBoom(cache_line_size: Int, cache_associativity: Int, num_tlb_wa
                         ),
                         icache = Some(
                             ICacheParams(
+                                blockBytes=cache_line_size,
                                 rowBits = (fetch_width_int/4)*64, 
                                 nSets=64, 
                                 nWays=(fetch_width_int/4)*4, 

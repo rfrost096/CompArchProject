@@ -1,243 +1,1423 @@
-/usr/bin/bash: line 1: verilator: command not found
-mkdir -p /home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/.classpath_cache/
-cd /home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard && java -jar /home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/scripts/sbt-launch.jar -Dsbt.ivy.home=/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/.ivy2 -Dsbt.global.base=/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/.sbt -Dsbt.boot.directory=/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/.sbt/boot/ -Dsbt.color=always -Dsbt.supershell=false -Dsbt.server.forcestart=true ";project chipyard; set assembly / assemblyOutputPath := file(\"/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/.classpath_cache/chipyard.jar\"); assembly" && touch /home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/.classpath_cache/chipyard.jar
-Picked up JAVA_TOOL_OPTIONS: -Xmx8G -Xss8M -Djava.io.tmpdir=/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/.java_tmp
-[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.8.2 (Ubuntu Java 21.0.9)[0m
-error:
-  bad constant pool index: 0 at pos: 48454
-     while compiling: <no file>
-        during phase: globalPhase=<no phase>, enteringPhase=<some phase>
-     library version: version 2.12.17
-    compiler version: version 2.12.17
-  reconstructed args: -classpath /home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/.sbt/boot/scala-2.12.17/lib/scala-library.jar -Yrangepos
+mkdir -p /home/rfrost26/CompArchProject/chipyard/.classpath_cache/
+cd /home/rfrost26/CompArchProject/chipyard && java -jar /home/rfrost26/CompArchProject/chipyard/scripts/sbt-launch.jar -Dsbt.ivy.home=/home/rfrost26/CompArchProject/chipyard/.ivy2 -Dsbt.global.base=/home/rfrost26/CompArchProject/chipyard/.sbt -Dsbt.boot.directory=/home/rfrost26/CompArchProject/chipyard/.sbt/boot/ -Dsbt.color=always -Dsbt.supershell=false -Dsbt.server.forcestart=true ";project chipyard; set assembly / assemblyOutputPath := file(\"/home/rfrost26/CompArchProject/chipyard/.classpath_cache/chipyard.jar\"); assembly" && touch /home/rfrost26/CompArchProject/chipyard/.classpath_cache/chipyard.jar
+Picked up JAVA_TOOL_OPTIONS: -Xmx8G -Xss8M -Djava.io.tmpdir=/home/rfrost26/CompArchProject/chipyard/.java_tmp
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.8.2 (N/A Java 20.0.2-internal)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project chipyard-build from plugins.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/rfrost26/CompArchProject/chipyard/project[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project chipyardRoot from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project testchipip from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project barf from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project constellation from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project icenet from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project cva6 from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project ibex from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project sodor from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project radiance from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project midas_target_utils from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mresolving key references (48746 settings) ...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to chipyardRoot (in build file:/home/rfrost26/CompArchProject/chipyard/)[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to chipyard (in build file:/home/rfrost26/CompArchProject/chipyard/)[0m
+[0m[[0m[0minfo[0m] [0m[0mDefining assembly / assemblyOutputPath[0m
+[0m[[0m[0minfo[0m] [0m[0mThe new value will be used by assembly[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to chipyard (in build file:/home/rfrost26/CompArchProject/chipyard/)[0m
+Warning: Tried to extract the base path for relative glob tools/stage/src/main/scala/**/*.{java,scala}. To disable this warning, re-run the program with java option, -Dsbt.io.implicit.relative.glob.conversion=allow
+Warning: Tried to extract the base path for relative glob tools/stage/src/main/scala/**/*.{java,scala}. To disable this warning, re-run the program with java option, -Dsbt.io.implicit.relative.glob.conversion=allow
+Warning: Tried to extract the base path for relative glob tools/firrtl2/src/main/java/**/*.{java,scala}. To disable this warning, re-run the program with java option, -Dsbt.io.implicit.relative.glob.conversion=allow
+Warning: Tried to extract the base path for relative glob tools/firrtl2/src/main/java/**/*.{java,scala}. To disable this warning, re-run the program with java option, -Dsbt.io.implicit.relative.glob.conversion=allow
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/rfrost26/CompArchProject/chipyard/generators/chipyard/target/scala-2.13/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/rfrost26/CompArchProject/chipyard/generators/chipyard/src/main/scala/config/ModularBoomConfig.scala:109:24: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument[0m
+[0m[[0m[33mwarn[0m] [0m[0m            val prev = up(TilesLocated(InSubsystem), site)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[33mwarn[0m] [0m[0mmultiple main classes detected: run 'show discoveredMainClasses' to see the list[0m
+[0m[[0m[0minfo[0m] [0m[0m78 file(s) merged using strategy 'Rename' (Run the task at debug level to see the details)[0m
+[0m[[0m[0minfo[0m] [0m[0m68 file(s) merged using strategy 'Rename (Custom)' (Run the task at debug level to see the details)[0m
+[0m[[0m[0minfo[0m] [0m[0m391 file(s) merged using strategy 'Discard' (Run the task at debug level to see the details)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt: /home/rfrost26/CompArchProject/chipyard/.classpath_cache/chipyard.jar[0m
+[0m[[0m[0minfo[0m] [0m[0mJar hash: 700b0ee121abfe6e941daa52ab23dff87828a342[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 37 s, completed Dec 3, 2025, 1:42:11 PM[0m
+[0Jmkdir -p /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig
+(set -o pipefail && 	cd /home/rfrost26/CompArchProject/chipyard && java -cp /home/rfrost26/CompArchProject/chipyard/.classpath_cache/chipyard.jar chipyard.Generator  --target-dir /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig --name chipyard.harness.TestHarness.ModularBoomConfig --top-module chipyard.harness.TestHarness --legacy-configs chipyard:ModularBoomConfig   | tee /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.chisel.log)
+Picked up JAVA_TOOL_OPTIONS: -Xmx8G -Xss8M -Djava.io.tmpdir=/home/rfrost26/CompArchProject/chipyard/.java_tmp
+L2 InclusiveCache Client Map:
+	0 <= debug
+	1 <= serial_tl_0_0
+	2 <= serial_tl_0_1
+	3 <= serial_tl_0_2
+	4 <= serial_tl_0_3
+	5 <= Core 0 DCache
+	6 <= Core 0 ICache
 
-  last tree to typer: EmptyTree
-       tree position: <unknown>
-            tree tpe: <notype>
-              symbol: null
-           call site: <none> in <none>
+[C0] ======BOOM Tile 0 Params======
 
-== Source file context for tree position ==
+[C0] ====Overall Frontend Params====
 
-error:
-  bad constant pool index: 0 at pos: 48454
-     while compiling: <no file>
-        during phase: globalPhase=<no phase>, enteringPhase=<some phase>
-     library version: version 2.12.17
-    compiler version: version 2.12.17
-  reconstructed args: -classpath /home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/.sbt/boot/scala-2.12.17/lib/scala-library.jar -Yrangepos
+[C0] ==L1-ICache==
+[C0] Fetch bytes   : 8
+[C0] Block bytes   : 64
+[C0] Row bytes     : 8
+[C0] Word bits     : 64
+[C0] Sets          : 64
+[C0] Ways          : 4
+[C0] Refill cycles : 8
+[C0] RAMs          : (64 x 512) using 1 banks
+[C0] Single-banked
+[C0] I-TLB ways    : 32
 
-  last tree to typer: EmptyTree
-       tree position: <unknown>
-            tree tpe: <notype>
-              symbol: null
-           call site: <none> in <none>
+[C0] ==Branch Predictor Memory Sizes==
 
-== Source file context for tree position ==
+[C0] bank0 tage_l2: 128 x 44 = 704
+[C0] bank0 tage_l4: 128 x 44 = 704
+[C0] bank0 tage_l8: 256 x 48 = 1536
+[C0] bank0 tage_l16: 256 x 48 = 1536
+[C0] bank0 tage_l32: 128 x 52 = 832
+[C0] bank0 tage_l64: 128 x 52 = 832
+[C0] bank0 btb_meta_way0: 128 x 124 = 1984
+[C0] bank0 btb_data_way0: 128 x 56 = 896
+[C0] bank0 btb_meta_way1: 128 x 124 = 1984
+[C0] bank0 btb_data_way1: 128 x 56 = 896
+[C0] bank0 ebtb: 128 x 40 = 640
+[C0] bank0 bim: 2048 x 8 = 2048
+[C0] Total bpd size: 14 KB
 
-Exception in thread "sbt-parser-init-thread" java.lang.ExceptionInInitializerError
-	at sbt.internal.parser.SbtParserInit$$anon$2.run(SbtParser.scala:191)
-Caused by: scala.reflect.internal.FatalError: 
-  bad constant pool index: 0 at pos: 48454
-     while compiling: <no file>
-        during phase: globalPhase=<no phase>, enteringPhase=<some phase>
-     library version: version 2.12.17
-    compiler version: version 2.12.17
-  reconstructed args: -classpath /home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/.sbt/boot/scala-2.12.17/lib/scala-library.jar -Yrangepos
+[C0] ====Overall Core Params====
 
-  last tree to typer: EmptyTree
-       tree position: <unknown>
-            tree tpe: <notype>
-              symbol: null
-           call site: <none> in <none>
+[C0] ===ExecutionUnits===
 
-== Source file context for tree position ==
+[C0] ==3-wide Machine==
+[C0] ==5 Issue==
+
+[C0] ==ExeUnit==
+[C0]  - Mem
+[C0] ==ExeUnit==
+[C0]  - ALU
+[C0]  - Div
+[C0] ==ExeUnit==
+[C0]  - ALU
+[C0]  - IFPU
+[C0] ==ExeUnit==
+[C0]  - ALU
+[C0]  - Mul
+
+[C0] ===FP Pipeline===
+
+[C0] ==Floating Point Regfile==
+[C0] Num RF Read Ports     : 3
+[C0] Num RF Write Ports    : 2
+[C0] RF Cost (R+W)*(R+2W)  : 35
+[C0] Bypassable Units      : List(false, false)
+[C0] Num Wakeup Ports      : 2
+[C0] Num Bypass Ports      : 0
+
+[C0] ==ROB==
+[C0] Machine Width      : 3
+[C0] Rob Entries        : 60
+[C0] Rob Rows           : 20
+[C0] Rob Row size       : 5
+[C0] log2Ceil(coreWidth): 2
+[C0] FPU FFlag Ports    : 2
+
+[C0] ===Other Core Params===
+[C0] Fetch Width           : 4
+[C0] Decode Width          : 3
+[C0] Issue Width           : 5
+[C0] ROB Size              : 60
+[C0] Issue Window Size     : List(16, 32, 24) (Age-based Priority)
+[C0] Load/Store Unit Size  : 16/16
+[C0] Num Int Phys Registers: 80
+[C0] Num FP  Phys Registers: 64
+[C0] Max Branch Count      : 12
+[C0] ==Integer Regfile==
+[C0] Num RF Read Ports     : 8
+[C0] Num RF Write Ports    : 4
+[C0] RF Cost (R+W)*(R+2W)  : 192
+[C0] Bypassable Units      : List(true, true, true, true)
+
+[C0] Num Slow Wakeup Ports : 4
+[C0] Num Fast Wakeup Ports : 3
+[C0] Num Bypass Ports      : 5
+
+[C0] DCache Ways           : 4
+[C0] DCache Sets           : 64
+[C0] DCache nMSHRs         : 2
+[C0] ICache Ways           : 4
+[C0] ICache Sets           : 64
+[C0] D-TLB Ways            : 8
+[C0] I-TLB Ways            : 32
+[C0] Paddr Bits            : 32
+[C0] Vaddr Bits            : 39
+
+[C0] Using FPU Unit?       : true
+[C0] Using FDivSqrt?       : true
+[C0] Using VM?             : true
 
 
-	at scala.reflect.internal.Reporting.abort(Reporting.scala:69)
-	at scala.reflect.internal.Reporting.abort$(Reporting.scala:65)
-	at scala.reflect.internal.SymbolTable.abort(SymbolTable.scala:28)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser$ConstantPool.errorBadIndex(ClassfileParser.scala:385)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser$ConstantPool.getExternalName(ClassfileParser.scala:249)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.readParamNames$1(ClassfileParser.scala:828)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.parseAttribute$1(ClassfileParser.scala:834)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.$anonfun$parseAttributes$7(ClassfileParser.scala:908)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.parseAttributes(ClassfileParser.scala:908)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.parseMethod(ClassfileParser.scala:611)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.$anonfun$parseClass$4(ClassfileParser.scala:534)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.parseClass(ClassfileParser.scala:534)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.$anonfun$parse$2(ClassfileParser.scala:160)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.$anonfun$parse$1(ClassfileParser.scala:146)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.parse(ClassfileParser.scala:129)
-	at scala.tools.nsc.symtab.SymbolLoaders$ClassfileLoader.doComplete(SymbolLoaders.scala:343)
-	at scala.tools.nsc.symtab.SymbolLoaders$SymbolLoader.complete(SymbolLoaders.scala:250)
-	at scala.reflect.internal.Symbols$Symbol.completeInfo(Symbols.scala:1542)
-	at scala.reflect.internal.Symbols$Symbol.info(Symbols.scala:1514)
-	at scala.reflect.internal.Definitions.scala$reflect$internal$Definitions$$enterNewMethod(Definitions.scala:49)
-	at scala.reflect.internal.Definitions$DefinitionsClass.String_$plus$lzycompute(Definitions.scala:1134)
-	at scala.reflect.internal.Definitions$DefinitionsClass.String_$plus(Definitions.scala:1134)
-	at scala.reflect.internal.Definitions$DefinitionsClass.syntheticCoreMethods$lzycompute(Definitions.scala:1438)
-	at scala.reflect.internal.Definitions$DefinitionsClass.syntheticCoreMethods(Definitions.scala:1420)
-	at scala.reflect.internal.Definitions$DefinitionsClass.symbolsNotPresentInBytecode$lzycompute(Definitions.scala:1450)
-	at scala.reflect.internal.Definitions$DefinitionsClass.symbolsNotPresentInBytecode(Definitions.scala:1450)
-	at scala.reflect.internal.Definitions$DefinitionsClass.init(Definitions.scala:1506)
-	at scala.tools.nsc.Global$Run.<init>(Global.scala:1214)
-	at sbt.internal.parser.SbtParser$.<init>(SbtParser.scala:141)
-	at sbt.internal.parser.SbtParser$.<clinit>(SbtParser.scala)
-	... 1 more
-java.lang.NoClassDefFoundError: Could not initialize class sbt.internal.parser.SbtParser$
-	at sbt.internal.parser.SbtParser.splitExpressions(SbtParser.scala:247)
-	at sbt.internal.parser.SbtParser.<init>(SbtParser.scala:236)
-	at sbt.internal.EvaluateConfigurations$.splitExpressions(EvaluateConfigurations.scala:289)
-	at sbt.internal.EvaluateConfigurations$.parseConfiguration(EvaluateConfigurations.scala:98)
-	at sbt.internal.EvaluateConfigurations$.evaluateSbtFile(EvaluateConfigurations.scala:147)
-	at sbt.internal.Load$.loadSettingsFile$1(Load.scala:1118)
-	at sbt.internal.Load$.$anonfun$discoverProjects$2(Load.scala:1128)
-	at scala.collection.MapLike.getOrElse(MapLike.scala:131)
-	at scala.collection.MapLike.getOrElse$(MapLike.scala:129)
-	at scala.collection.AbstractMap.getOrElse(Map.scala:65)
-	at sbt.internal.Load$.memoLoadSettingsFile$1(Load.scala:1127)
-	at sbt.internal.Load$.$anonfun$discoverProjects$4(Load.scala:1135)
-	at scala.collection.immutable.List.map(List.scala:293)
-	at sbt.internal.Load$.loadFiles$1(Load.scala:1135)
-	at sbt.internal.Load$.discoverProjects(Load.scala:1149)
-	at sbt.internal.Load$.discover$1(Load.scala:901)
-	at sbt.internal.Load$.loadTransitive(Load.scala:955)
-	at sbt.internal.Load$.loadProjects$1(Load.scala:738)
-	at sbt.internal.Load$.$anonfun$loadUnit$12(Load.scala:741)
-	at sbt.internal.Load$.timed(Load.scala:1406)
-	at sbt.internal.Load$.$anonfun$loadUnit$1(Load.scala:741)
-	at sbt.internal.Load$.timed(Load.scala:1406)
-	at sbt.internal.Load$.loadUnit(Load.scala:694)
-	at sbt.internal.Load$.$anonfun$builtinLoader$4(Load.scala:492)
-	at sbt.internal.BuildLoader$.$anonfun$componentLoader$5(BuildLoader.scala:180)
-	at sbt.internal.BuildLoader.apply(BuildLoader.scala:245)
-	at sbt.internal.Load$.loadURI$1(Load.scala:554)
-	at sbt.internal.Load$.loadAll(Load.scala:570)
-	at sbt.internal.Load$.loadURI(Load.scala:500)
-	at sbt.internal.Load$.load(Load.scala:479)
-	at sbt.internal.Load$.$anonfun$apply$1(Load.scala:241)
-	at sbt.internal.Load$.timed(Load.scala:1406)
-	at sbt.internal.Load$.apply(Load.scala:241)
-	at sbt.internal.Load$.buildPluginDefinition(Load.scala:1323)
-	at sbt.internal.Load$.buildPlugins(Load.scala:1253)
-	at sbt.internal.Load$.plugins(Load.scala:1232)
-	at sbt.internal.Load$.$anonfun$loadUnit$2(Load.scala:700)
-	at sbt.internal.Load$.timed(Load.scala:1406)
-	at sbt.internal.Load$.$anonfun$loadUnit$1(Load.scala:700)
-	at sbt.internal.Load$.timed(Load.scala:1406)
-	at sbt.internal.Load$.loadUnit(Load.scala:694)
-	at sbt.internal.Load$.$anonfun$builtinLoader$4(Load.scala:492)
-	at sbt.internal.BuildLoader$.$anonfun$componentLoader$5(BuildLoader.scala:180)
-	at sbt.internal.BuildLoader.apply(BuildLoader.scala:245)
-	at sbt.internal.Load$.loadURI$1(Load.scala:554)
-	at sbt.internal.Load$.loadAll(Load.scala:570)
-	at sbt.internal.Load$.loadURI(Load.scala:500)
-	at sbt.internal.Load$.load(Load.scala:479)
-	at sbt.internal.Load$.$anonfun$apply$1(Load.scala:241)
-	at sbt.internal.Load$.timed(Load.scala:1406)
-	at sbt.internal.Load$.apply(Load.scala:241)
-	at sbt.internal.Load$.defaultLoad(Load.scala:56)
-	at sbt.BuiltinCommands$.liftedTree1$1(Main.scala:961)
-	at sbt.BuiltinCommands$.doLoadProject(Main.scala:961)
-	at sbt.BuiltinCommands$.$anonfun$loadProjectImpl$2(Main.scala:914)
-	at sbt.Command$.$anonfun$applyEffect$4(Command.scala:150)
-	at sbt.Command$.$anonfun$applyEffect$2(Command.scala:145)
-	at sbt.Command$.process(Command.scala:189)
-	at sbt.MainLoop$.$anonfun$processCommand$5(MainLoop.scala:245)
-	at scala.Option.getOrElse(Option.scala:189)
-	at sbt.MainLoop$.process$1(MainLoop.scala:245)
-	at sbt.MainLoop$.processCommand(MainLoop.scala:278)
-	at sbt.MainLoop$.$anonfun$next$5(MainLoop.scala:163)
-	at sbt.State$StateOpsImpl$.runCmd$1(State.scala:289)
-	at sbt.State$StateOpsImpl$.process$extension(State.scala:325)
-	at sbt.MainLoop$.$anonfun$next$4(MainLoop.scala:163)
-	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
-	at sbt.MainLoop$.next(MainLoop.scala:163)
-	at sbt.MainLoop$.run(MainLoop.scala:144)
-	at sbt.MainLoop$.$anonfun$runWithNewLog$1(MainLoop.scala:119)
-	at sbt.io.Using.apply(Using.scala:27)
-	at sbt.MainLoop$.runWithNewLog(MainLoop.scala:112)
-	at sbt.MainLoop$.runAndClearLast(MainLoop.scala:66)
-	at sbt.MainLoop$.runLoggedLoop(MainLoop.scala:51)
-	at sbt.MainLoop$.runLogged(MainLoop.scala:42)
-	at sbt.StandardMain$.runManaged(Main.scala:223)
-	at sbt.xMain$.$anonfun$run$11(Main.scala:133)
-	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)
-	at scala.Console$.withIn(Console.scala:230)
-	at sbt.internal.util.Terminal$.withIn(Terminal.scala:578)
-	at sbt.internal.util.Terminal$.$anonfun$withStreams$1(Terminal.scala:358)
-	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)
-	at scala.Console$.withOut(Console.scala:167)
-	at sbt.internal.util.Terminal$.$anonfun$withOut$2(Terminal.scala:568)
-	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)
-	at scala.Console$.withErr(Console.scala:196)
-	at sbt.internal.util.Terminal$.withOut(Terminal.scala:568)
-	at sbt.internal.util.Terminal$.withStreams(Terminal.scala:358)
-	at sbt.xMain$.withStreams$1(Main.scala:87)
-	at sbt.xMain$.run(Main.scala:121)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at sbt.internal.XMainConfiguration.run(XMainConfiguration.java:57)
-	at sbt.xMain.run(Main.scala:46)
-	at xsbt.boot.Launch$$anonfun$run$1.apply(Launch.scala:109)
-	at xsbt.boot.Launch$.withContextLoader(Launch.scala:128)
-	at xsbt.boot.Launch$.run(Launch.scala:109)
-	at xsbt.boot.Launch$$anonfun$apply$1.apply(Launch.scala:35)
-	at xsbt.boot.Launch$.launch(Launch.scala:117)
-	at xsbt.boot.Launch$.apply(Launch.scala:18)
-	at xsbt.boot.Boot$.runImpl(Boot.scala:41)
-	at xsbt.boot.Boot$.main(Boot.scala:17)
-	at xsbt.boot.Boot.main(Boot.scala)
-Caused by: java.lang.ExceptionInInitializerError: Exception scala.reflect.internal.FatalError: 
-  bad constant pool index: 0 at pos: 48454
-     while compiling: <no file>
-        during phase: globalPhase=<no phase>, enteringPhase=<some phase>
-     library version: version 2.12.17
-    compiler version: version 2.12.17
-  reconstructed args: -classpath /home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/.sbt/boot/scala-2.12.17/lib/scala-library.jar -Yrangepos
+Interrupt map (2 harts 1 interrupts):
+  [1, 1] => uart_0
 
-  last tree to typer: EmptyTree
-       tree position: <unknown>
-            tree tpe: <notype>
-              symbol: null
-           call site: <none> in <none>
+<stdin>:82.18-87.5: Warning (simple_bus_reg): /soc/cbus_clock: missing or empty reg/ranges property
+<stdin>:109.18-114.5: Warning (simple_bus_reg): /soc/fbus_clock: missing or empty reg/ranges property
+<stdin>:125.18-130.5: Warning (simple_bus_reg): /soc/mbus_clock: missing or empty reg/ranges property
+<stdin>:131.18-136.5: Warning (simple_bus_reg): /soc/pbus_clock: missing or empty reg/ranges property
+<stdin>:142.18-147.5: Warning (simple_bus_reg): /soc/sbus_clock: missing or empty reg/ranges property
+<stdin>:42.30-46.6: Warning (interrupt_provider): /cpus/cpu@0/interrupt-controller: Missing #address-cells in interrupt provider
+<stdin>:115.37-124.5: Warning (interrupt_provider): /soc/interrupt-controller@c000000: Missing #address-cells in interrupt provider
+[31m
 
-== Source file context for tree position ==
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
- [in thread "sbt-parser-init-thread"]
-	at scala.reflect.internal.Reporting.abort(Reporting.scala:69)
-	at scala.reflect.internal.Reporting.abort$(Reporting.scala:65)
-	at scala.reflect.internal.SymbolTable.abort(SymbolTable.scala:28)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser$ConstantPool.errorBadIndex(ClassfileParser.scala:385)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser$ConstantPool.getExternalName(ClassfileParser.scala:249)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.readParamNames$1(ClassfileParser.scala:828)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.parseAttribute$1(ClassfileParser.scala:834)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.$anonfun$parseAttributes$7(ClassfileParser.scala:908)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.parseAttributes(ClassfileParser.scala:908)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.parseMethod(ClassfileParser.scala:611)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.$anonfun$parseClass$4(ClassfileParser.scala:534)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.parseClass(ClassfileParser.scala:534)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.$anonfun$parse$2(ClassfileParser.scala:160)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.$anonfun$parse$1(ClassfileParser.scala:146)
-	at scala.tools.nsc.symtab.classfile.ClassfileParser.parse(ClassfileParser.scala:129)
-	at scala.tools.nsc.symtab.SymbolLoaders$ClassfileLoader.doComplete(SymbolLoaders.scala:343)
-	at scala.tools.nsc.symtab.SymbolLoaders$SymbolLoader.complete(SymbolLoaders.scala:250)
-	at scala.reflect.internal.Symbols$Symbol.completeInfo(Symbols.scala:1542)
-	at scala.reflect.internal.Symbols$Symbol.info(Symbols.scala:1514)
-	at scala.reflect.internal.Definitions.scala$reflect$internal$Definitions$$enterNewMethod(Definitions.scala:49)
-	at scala.reflect.internal.Definitions$DefinitionsClass.String_$plus$lzycompute(Definitions.scala:1134)
-	at scala.reflect.internal.Definitions$DefinitionsClass.String_$plus(Definitions.scala:1134)
-	at scala.reflect.internal.Definitions$DefinitionsClass.syntheticCoreMethods$lzycompute(Definitions.scala:1438)
-	at scala.reflect.internal.Definitions$DefinitionsClass.syntheticCoreMethods(Definitions.scala:1420)
-	at scala.reflect.internal.Definitions$DefinitionsClass.symbolsNotPresentInBytecode$lzycompute(Definitions.scala:1450)
-	at scala.reflect.internal.Definitions$DefinitionsClass.symbolsNotPresentInBytecode(Definitions.scala:1450)
-	at scala.reflect.internal.Definitions$DefinitionsClass.init(Definitions.scala:1506)
-	at scala.tools.nsc.Global$Run.<init>(Global.scala:1214)
-	at sbt.internal.parser.SbtParser$.<init>(SbtParser.scala:141)
-	at sbt.internal.parser.SbtParser$.<clinit>(SbtParser.scala)
-	at sbt.internal.parser.SbtParserInit$$anon$2.run(SbtParser.scala:191)
-[0m[[0m[31merror[0m] [0m[0mjava.lang.NoClassDefFoundError: Could not initialize class sbt.internal.parser.SbtParser$[0m
-[0m[[0m[31merror[0m] [0m[0mUse 'last' for the full log.[0m
-[0m[[0m[33mwarn[0m] [0m[0mProject loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)[0m
-[0Jmake: *** [/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/common.mk:138: /home/ryan/VT/ComputerArchitecture/Project/CompArchProject/chipyard/.classpath_cache/chipyard.jar] Error 1
+WARNING: YOU ARE USING A DEADLOCKING DECOUPLED
+SERIAL PHY. THIS SHOULD ONLY BE USED IF YOU ARE
+CERTAIN THIS LINK WILL NOT BE HEAVILY LOADED.
+
+USE CreditedSourceSyncSerialPhyParams INSTEAD IF
+DEADLOCK-FREEDOM IS NECESSARY.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[0m
+Clock sbus_0: using diplomatically specified frequency of 500.0.
+Clock pbus_0: using diplomatically specified frequency of 500.0.
+Clock fbus_0: using diplomatically specified frequency of 500.0.
+Clock mbus_0: using diplomatically specified frequency of 500.0.
+Clock cbus_0: using diplomatically specified frequency of 500.0.
+Leaving clock group uncore with synchronous reset
+/dts-v1/;
+
+/ {
+	#address-cells = <1>;
+	#size-cells = <1>;
+	compatible = "ucb-bar,chipyard-dev";
+	model = "ucb-bar,chipyard";
+	L3: aliases {
+		serial0 = &L25;
+	};
+	L17: chosen {
+		stdout-path = &L25;
+	};
+	L2: cpus {
+		#address-cells = <1>;
+		#size-cells = <0>;
+		timebase-frequency = <500000>;
+		L12: cpu@0 {
+			clock-frequency = <0>;
+			compatible = "ucb-bar,boom0", "riscv";
+			d-cache-block-size = <64>;
+			d-cache-sets = <64>;
+			d-cache-size = <16384>;
+			d-tlb-sets = <1>;
+			d-tlb-size = <8>;
+			device_type = "cpu";
+			hardware-exec-breakpoint-count = <0>;
+			i-cache-block-size = <64>;
+			i-cache-sets = <64>;
+			i-cache-size = <16384>;
+			i-tlb-sets = <1>;
+			i-tlb-size = <32>;
+			mmu-type = "riscv,sv39";
+			next-level-cache = <&L10>;
+			reg = <0x0>;
+			riscv,isa = "rv64imafdczicsr_zifencei_zihpm";
+			riscv,pmpgranularity = <4>;
+			riscv,pmpregions = <8>;
+			status = "okay";
+			timebase-frequency = <500000>;
+			tlb-split;
+			L11: interrupt-controller {
+				#interrupt-cells = <1>;
+				compatible = "riscv,cpu-intc";
+				interrupt-controller;
+			};
+		};
+	};
+	L28: htif {
+		compatible = "ucb,htif0";
+	};
+	L23: memory@8000000 {
+		device_type = "memory";
+		reg = <0x8000000 0x10000>;
+		status = "disabled";
+	};
+	L20: memory@80000000 {
+		device_type = "memory";
+		reg = <0x80000000 0x10000000>;
+	};
+	L1: soc {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		compatible = "ucb-bar,chipyard-soc", "simple-bus";
+		ranges;
+		L24: boot-address-reg@1000 {
+			reg = <0x1000 0x1000>;
+			reg-names = "control";
+		};
+		L10: cache-controller@2010000 {
+			cache-block-size = <64>;
+			cache-level = <2>;
+			cache-sets = <1024>;
+			cache-size = <524288>;
+			cache-unified;
+			compatible = "sifive,inclusivecache0", "cache";
+			next-level-cache = <&L20 &L23>;
+			reg = <0x2010000 0x1000>;
+			reg-names = "control";
+			sifive,mshr-count = <7>;
+		};
+		L7: cbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <500000000>;
+			clock-output-names = "cbus_clock";
+			compatible = "fixed-clock";
+		};
+		L13: clint@2000000 {
+			compatible = "riscv,clint0";
+			interrupts-extended = <&L11 3 &L11 7>;
+			reg = <0x2000000 0x10000>;
+			reg-names = "control";
+		};
+		L26: clock-gater@100000 {
+			reg = <0x100000 0x1000>;
+			reg-names = "control";
+		};
+		L15: debug-controller@0 {
+			compatible = "sifive,debug-013", "riscv,debug-013";
+			debug-attach = "jtag";
+			interrupts-extended = <&L11 65535>;
+			reg = <0x0 0x1000>;
+			reg-names = "control";
+		};
+		L8: error-device@3000 {
+			compatible = "sifive,error0";
+			reg = <0x3000 0x1000>;
+		};
+		L6: fbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <500000000>;
+			clock-output-names = "fbus_clock";
+			compatible = "fixed-clock";
+		};
+		L14: interrupt-controller@c000000 {
+			#interrupt-cells = <1>;
+			compatible = "riscv,plic0";
+			interrupt-controller;
+			interrupts-extended = <&L11 11 &L11 9>;
+			reg = <0xc000000 0x4000000>;
+			reg-names = "control";
+			riscv,max-priority = <1>;
+			riscv,ndev = <1>;
+		};
+		L9: mbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <500000000>;
+			clock-output-names = "mbus_clock";
+			compatible = "fixed-clock";
+		};
+		L5: pbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <500000000>;
+			clock-output-names = "pbus_clock";
+			compatible = "fixed-clock";
+		};
+		L22: rom@10000 {
+			compatible = "sifive,rom0";
+			reg = <0x10000 0x10000>;
+			reg-names = "mem";
+		};
+		L4: sbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <500000000>;
+			clock-output-names = "sbus_clock";
+			compatible = "fixed-clock";
+		};
+		L25: serial@10020000 {
+			clocks = <&L5>;
+			compatible = "sifive,uart0";
+			interrupt-parent = <&L14>;
+			interrupts = <1>;
+			reg = <0x10020000 0x1000>;
+			reg-names = "control";
+		};
+		L27: tile-reset-setter@110000 {
+			reg = <0x110000 0x1000>;
+			reg-names = "control";
+		};
+	};
+};
+
+Generated Address Map
+	       0 -     1000 ARWX  debug-controller@0
+	    1000 -     2000 ARW   boot-address-reg@1000
+	    3000 -     4000 ARWX  error-device@3000
+	   10000 -    20000  R X  rom@10000
+	  100000 -   101000 ARW   clock-gater@100000
+	  110000 -   111000 ARW   tile-reset-setter@110000
+	 2000000 -  2010000 ARW   clint@2000000
+	 2010000 -  2011000 ARW   cache-controller@2010000
+	 8000000 -  8010000 ARWXC memory@8000000
+	 c000000 - 10000000 ARW   interrupt-controller@c000000
+	10020000 - 10021000 ARW   serial@10020000
+	80000000 - 90000000 ARWXC memory@80000000
+
+IOCells generated by IOBinders:
+  IOBinder for interface sifive.blocks.devices.uart.HasPeripheryUART generated:
+    1 X GenericDigitalInIOCell
+    1 X GenericDigitalOutIOCell
+  IOBinder for interface testchipip.boot.CanHavePeripheryCustomBootPin generated:
+    1 X GenericDigitalInIOCell
+  IOBinder for interface freechips.rocketchip.devices.debug.HasPeripheryDebug generated:
+    4 X GenericDigitalInIOCell
+    1 X GenericDigitalOutIOCell
+  IOBinder for interface chipyard.clocking.CanHaveClockTap generated:
+    1 X GenericDigitalOutIOCell
+  IOBinder for interface testchipip.serdes.CanHavePeripheryTLSerial generated:
+    35 X GenericDigitalInIOCell
+    34 X GenericDigitalOutIOCell
+
+  Total generated 78 IOCells:
+    41 X GenericDigitalInIOCell
+    37 X GenericDigitalOutIOCell
+[31m
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+WARNING: YOU ARE USING A DEADLOCKING DECOUPLED
+SERIAL PHY. THIS SHOULD ONLY BE USED IF YOU ARE
+CERTAIN THIS LINK WILL NOT BE HEAVILY LOADED.
+
+USE CreditedSourceSyncSerialPhyParams INSTEAD IF
+DEADLOCK-FREEDOM IS NECESSARY.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[0m
+Harness binder clock is 100.0
+[warn] generators/boom/src/main/scala/v3/lsu/dcache.scala 70:43: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]                           data = wb_buffer(data_req_cnt))
+[warn]                                           ^
+[warn] generators/boom/src/main/scala/v3/lsu/dcache.scala 77:43: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]                           data = wb_buffer(data_req_cnt))._2
+[warn]                                           ^
+[warn] generators/boom/src/main/scala/v3/lsu/dcache.scala 109:16: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]       wb_buffer(r2_data_req_cnt) := io.data_resp
+[warn]                ^
+[warn] generators/boom/src/main/scala/v3/ifu/icache.scala 175:25: [W003] Dynamic index with width 7 is too small for extractee of width 256
+[warn]     val s1_vb = vb_array(Cat(i.U, s1_idx))
+[warn]                         ^
+[warn] generators/boom/src/main/scala/v3/exu/rename/rename-maptable.scala 113:65: [W004] Dynamic index with width 6 is too wide for Vec of size 32 (expected index width 5).
+[warn]     io.map_resps(i).prs1       := (0 until i).foldLeft(map_table(io.map_reqs(i).lrs1)) ((p,k) =>
+[warn]                                                                 ^
+[warn] generators/boom/src/main/scala/v3/exu/rename/rename-maptable.scala 115:65: [W004] Dynamic index with width 6 is too wide for Vec of size 32 (expected index width 5).
+[warn]     io.map_resps(i).prs2       := (0 until i).foldLeft(map_table(io.map_reqs(i).lrs2)) ((p,k) =>
+[warn]                                                                 ^
+[warn] generators/boom/src/main/scala/v3/exu/rename/rename-maptable.scala 117:65: [W004] Dynamic index with width 6 is too wide for Vec of size 32 (expected index width 5).
+[warn]     io.map_resps(i).prs3       := (0 until i).foldLeft(map_table(io.map_reqs(i).lrs3)) ((p,k) =>
+[warn]                                                                 ^
+[warn] generators/boom/src/main/scala/v3/exu/rename/rename-maptable.scala 119:65: [W004] Dynamic index with width 6 is too wide for Vec of size 32 (expected index width 5).
+[warn]     io.map_resps(i).stale_pdst := (0 until i).foldLeft(map_table(io.map_reqs(i).ldst)) ((p,k) =>
+[warn]                                                                 ^
+[warn] generators/boom/src/main/scala/v3/exu/rename/rename-busytable.scala 67:45: [W002] Dynamic index with width 7 is too large for extractee of width 64
+[warn]     io.busy_resps(i).prs1_busy := busy_table(io.ren_uops(i).prs1) || prs1_was_bypassed && bypass.B
+[warn]                                             ^
+[warn] generators/boom/src/main/scala/v3/exu/rename/rename-busytable.scala 68:45: [W002] Dynamic index with width 7 is too large for extractee of width 64
+[warn]     io.busy_resps(i).prs2_busy := busy_table(io.ren_uops(i).prs2) || prs2_was_bypassed && bypass.B
+[warn]                                             ^
+[warn] generators/boom/src/main/scala/v3/exu/rename/rename-busytable.scala 69:45: [W002] Dynamic index with width 7 is too large for extractee of width 64
+[warn]     io.busy_resps(i).prs3_busy := busy_table(io.ren_uops(i).prs3) || prs3_was_bypassed && bypass.B
+[warn]                                             ^
+[warn] generators/boom/src/main/scala/v3/exu/rename/rename-stage.scala 396:13: [W004] Dynamic index with width 7 is too wide for Vec of size 32 (expected index width 5).
+[warn]       unbusy(io.wakeups(w).bits.uop.pdst) := true.B
+[warn]             ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 347:16: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]         rob_bsy(row_idx)      := false.B
+[warn]                ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 348:19: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]         rob_unsafe(row_idx)   := false.B
+[warn]                   ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 349:23: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]         rob_predicated(row_idx)  := wb_resp.bits.predicated
+[warn]                       ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 363:16: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]         rob_bsy(cidx)    := false.B
+[warn]                ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 364:19: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]         rob_unsafe(cidx) := false.B
+[warn]                   ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 365:24: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]         assert (rob_val(cidx) === true.B, "[rob] store writing back to invalid entry.")
+[warn]                        ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 366:24: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]         assert (rob_bsy(cidx) === true.B, "[rob] store writing back to a not-busy entry.")
+[warn]                        ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 372:19: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]         rob_unsafe(cidx) := false.B
+[warn]                   ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 382:22: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]         rob_fflags(w)(GetRowIdx(fflag_uop.rob_idx)) := io.fflags(i).bits.flags
+[warn]                      ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 391:20: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]       rob_exception(GetRowIdx(io.lxcpt.bits.uop.rob_idx)) := true.B
+[warn]                    ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 394:26: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]         assert(rob_unsafe(GetRowIdx(io.lxcpt.bits.uop.rob_idx)),
+[warn]                          ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 400:20: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]       rob_exception(GetRowIdx(io.csr_replay.bits.uop.rob_idx)) := true.B
+[warn]                    ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 473:14: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]       rob_uop(GetRowIdx(io.brupdate.b2.uop.rob_idx)).debug_fsrc := BSRC_C
+[warn]              ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 474:14: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]       rob_uop(GetRowIdx(io.brupdate.b2.uop.rob_idx)).taken      := io.brupdate.b2.taken
+[warn]              ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 516:29: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]       val temp_uop = rob_uop(GetRowIdx(rob_idx))
+[warn]                             ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 519:24: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]                !rob_val(GetRowIdx(rob_idx))),
+[warn]                        ^
+[warn] generators/boom/src/main/scala/v3/exu/rob.scala 522:24: [W004] Dynamic index with width 7 is too wide for Vec of size 20 (expected index width 5).
+[warn]                !rob_bsy(GetRowIdx(rob_idx))),
+[warn]                        ^
+[warn] generators/boom/src/main/scala/v3/lsu/lsu.scala 1240:26: [W004] Dynamic index with width 5 is too wide for Vec of size 16 (expected index width 4).
+[warn]   val ld_xcpt_uop   = ldq(Mux(l_idx >= numLdqEntries.U, l_idx - numLdqEntries.U, l_idx)).bits.uop
+[warn]                          ^
+[warn] There were 30 warning(s) during hardware elaboration.
+echo "$mfc_extra_anno_contents" > /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.extrafirtool.anno.json
+jq -s '[.[][]]' /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.anno.json /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.extrafirtool.anno.json > /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.appended.anno.json
+mkdir -p /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/
+echo "emittedLineLength=2048,noAlwaysComb,disallowLocalVariables,verifLabels,disallowPortDeclSharing,locationInfoStyle=wrapInAtSquareBracket" > /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/.mfc_lowering_options
+rm -rf /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral
+(set -o pipefail && firtool \
+		--format=fir \
+		--export-module-hierarchy \
+		--verify-each=true \
+		--warn-on-unprocessed-annotations \
+		--disable-annotation-classless \
+		--disable-annotation-unknown \
+		--mlir-timing \
+		--lowering-options=emittedLineLength=2048,noAlwaysComb,disallowLocalVariables,verifLabels,disallowPortDeclSharing,locationInfoStyle=wrapInAtSquareBracket \
+		--repl-seq-mem \
+		--repl-seq-mem-file=/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.mems.conf \
+		--annotation-file=/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.appended.anno.json \
+		--split-verilog \
+		 \
+		-o /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral \
+		/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.fir |& tee /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.firtool.log)
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 210 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: warning: module contains 12 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Arbiter.scala:22:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Arbiter.scala:22:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/AtomicAutomata.scala:36:9: warning: module contains 2 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Arbiter.scala:77:13: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/AtomicAutomata.scala:36:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:214:16: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:214:16: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Arbiter.scala:22:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Arbiter.scala:22:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Arbiter.scala:22:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/AtomicAutomata.scala:36:9: warning: module contains 2 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Arbiter.scala:77:13: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/AtomicAutomata.scala:36:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/devices/tilelink/Error.scala:21:9: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/devices/tilelink/Error.scala:34:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/devices/tilelink/Error.scala:21:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:214:16: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:214:16: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:214:16: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:214:16: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:214:16: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Arbiter.scala:22:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/amba/axi4/UserYanker.scala:36:9: warning: module contains 2 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/amba/axi4/UserYanker.scala:69:14: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/amba/axi4/UserYanker.scala:36:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/ToAXI4.scala:103:9: warning: module contains 20 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/ToAXI4.scala:280:16: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/ToAXI4.scala:103:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 210 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SourceA.scala:33:7: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/Parameters.scala:222:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SourceA.scala:33:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SourceB.scala:33:7: warning: module contains 4 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SourceB.scala:59:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SourceB.scala:33:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SourceC.scala:35:7: warning: module contains 5 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SourceC.scala:64:10: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SourceC.scala:35:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SourceD.scala:48:7: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SourceD.scala:123:10: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SourceD.scala:48:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/ListBuffer.scala:36:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/ListBuffer.scala:86:10: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/ListBuffer.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/ListBuffer.scala:36:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/ListBuffer.scala:86:10: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/ListBuffer.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SinkC.scala:41:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SinkC.scala:90:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SinkC.scala:41:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SinkD.scala:34:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SinkD.scala:82:10: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/SinkD.scala:34:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/Directory.scala:56:7: warning: module contains 5 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/Directory.scala:86:10: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/Directory.scala:56:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/ListBuffer.scala:36:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/ListBuffer.scala:86:10: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/ListBuffer.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: warning: module contains 70 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:105:14: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: warning: module contains 70 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:105:14: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: warning: module contains 70 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:105:14: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: warning: module contains 70 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:105:14: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: warning: module contains 70 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:105:14: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: warning: module contains 70 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:105:14: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: warning: module contains 70 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:105:14: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:84:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/Scheduler.scala:27:7: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/Scheduler.scala:291:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip-inclusive-cache/design/craft/inclusivecache/src/Scheduler.scala:27:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 210 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 210 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/util/IDPool.scala:8:7: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/util/IDPool.scala:44:10: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/util/IDPool.scala:8:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/CacheCork.scala:42:9: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/CacheCork.scala:116:16: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/CacheCork.scala:42:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 210 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Arbiter.scala:22:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/lsu/dcache.scala:145:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/lsu/dcache.scala:185:9: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/lsu/dcache.scala:145:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/lsu/mshrs.scala:36:7: warning: module contains 7 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/lsu/mshrs.scala:131:9: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/lsu/mshrs.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/lsu/mshrs.scala:36:7: warning: module contains 7 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/lsu/mshrs.scala:131:9: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/lsu/mshrs.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/lsu/mshrs.scala:402:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/lsu/mshrs.scala:454:9: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/lsu/mshrs.scala:402:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/lsu/mshrs.scala:513:7: warning: module contains 4 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Arbiter.scala:77:13: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/lsu/mshrs.scala:513:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/lsu/dcache.scala:413:7: warning: module contains 10 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/lsu/dcache.scala:548:9: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/lsu/dcache.scala:413:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/ifu/icache.scala:103:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/ifu/icache.scala:179:9: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/ifu/icache.scala:103:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/ifu/bpd/predictor.scala:194:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/ifu/bpd/predictor.scala:468:13: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/ifu/bpd/predictor.scala:194:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/rocket/TLB.scala:318:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/rocket/TLB.scala:719:13: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/rocket/TLB.scala:318:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/ifu/frontend.scala:322:7: warning: module contains 2 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/ifu/frontend.scala:770:11: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/ifu/frontend.scala:322:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/execution-units/functional-unit.scala:482:7: warning: module contains 4 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/execution-units/functional-unit.scala:504:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/execution-units/functional-unit.scala:482:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:204:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:425:10: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:204:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:204:7: warning: module contains 2 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:147:11: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:204:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/execution-units/functional-unit.scala:290:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/execution-units/functional-unit.scala:375:14: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/execution-units/functional-unit.scala:290:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/execution-units/functional-unit.scala:591:7: warning: module contains 2 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/execution-units/functional-unit.scala:618:10: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/execution-units/functional-unit.scala:591:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:204:7: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:147:11: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:204:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/execution-units/functional-unit.scala:290:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/execution-units/functional-unit.scala:375:14: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/execution-units/functional-unit.scala:290:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:204:7: warning: module contains 2 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:147:11: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:204:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/execution-units/fdiv.scala:84:7: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/execution-units/fdiv.scala:138:10: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/execution-units/fdiv.scala:84:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:437:7: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:160:11: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/execution-units/execution-unit.scala:437:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-unit-age-ordered.scala:29:7: warning: module contains 4 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-unit.scala:145:13: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-unit-age-ordered.scala:29:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/register-read/regfile.scala:106:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/register-read/regfile.scala:171:15: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/register-read/regfile.scala:106:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/fp-pipeline.scala:28:7: warning: module contains 8 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/fp-pipeline.scala:187:10: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/fp-pipeline.scala:28:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/rename/rename-maptable.scala:43:7: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/rename/rename-maptable.scala:128:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/rename/rename-maptable.scala:43:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/rename/rename-freelist.scala:20:7: warning: module contains 2 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/rename/rename-freelist.scala:94:10: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/rename/rename-freelist.scala:20:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/rename/rename-stage.scala:160:7: warning: module contains 8 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/rename/rename-stage.scala:300:10: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/rename/rename-stage.scala:160:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/rename/rename-maptable.scala:43:7: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/rename/rename-maptable.scala:128:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/rename/rename-maptable.scala:43:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/rename/rename-freelist.scala:20:7: warning: module contains 2 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/rename/rename-freelist.scala:94:10: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/rename/rename-freelist.scala:20:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/rename/rename-stage.scala:160:7: warning: module contains 8 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/rename/rename-stage.scala:300:10: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/rename/rename-stage.scala:160:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-unit-age-ordered.scala:29:7: warning: module contains 4 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-unit.scala:145:13: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-unit-age-ordered.scala:29:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:156:12: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-slot.scala:69:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/issue-units/issue-unit-age-ordered.scala:29:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-unit.scala:172:10: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/issue-units/issue-unit-age-ordered.scala:29:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/register-read/regfile.scala:106:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/register-read/regfile.scala:171:15: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/register-read/regfile.scala:106:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/rob.scala:211:7: warning: module contains 90 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/rob.scala:333:14: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/rob.scala:211:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/rocket/CSR.scala:377:7: warning: module contains 4 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/rocket/CSR.scala:1022:9: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/rocket/CSR.scala:377:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/exu/core.scala:51:7: warning: module contains 22 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/exu/core.scala:224:10: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/exu/core.scala:51:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/lsu/tlb.scala:17:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/lsu/tlb.scala:344:15: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/lsu/tlb.scala:17:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/boom/src/main/scala/v3/lsu/lsu.scala:201:7: warning: module contains 60 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/boom/src/main/scala/v3/lsu/lsu.scala:222:10: note: example printf here, will just be a printf in the future
+generators/boom/src/main/scala/v3/lsu/lsu.scala:201:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/rocket/PTW.scala:219:7: warning: module contains 6 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/rocket/PTW.scala:395:9: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/rocket/PTW.scala:219:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 210 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/devices/tilelink/Plic.scala:132:9: warning: module contains 4 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/devices/tilelink/Plic.scala:249:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/devices/tilelink/Plic.scala:132:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Arbiter.scala:22:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/devices/tilelink/Error.scala:21:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/devices/tilelink/Error.scala:34:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/devices/tilelink/Error.scala:21:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/devices/debug/SBA.scala:273:9: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/devices/debug/SBA.scala:373:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/devices/debug/SBA.scala:273:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/devices/debug/Debug.scala:790:9: warning: module contains 5 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/devices/debug/Debug.scala:1505:15: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/devices/debug/Debug.scala:790:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/SRAM.scala:63:9: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/SRAM.scala:231:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/SRAM.scala:63:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:214:16: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Arbiter.scala:22:12: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Xbar.scala:74:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:214:16: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 112 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:214:16: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Fragmenter.scala:92:9: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:137:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:185:9: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:137:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:137:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:185:9: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:137:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:89:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:118:9: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:89:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:137:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:185:9: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:137:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:56:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:72:9: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/jtag/JtagShifter.scala:56:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/devices/debug/DebugTransport.scala:73:7: warning: module contains 3 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/devices/debug/DebugTransport.scala:203:9: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/devices/debug/DebugTransport.scala:73:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/testchipip/src/main/scala/uart/SimUART.scala:26:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/testchipip/src/main/scala/uart/SimUART.scala:48:35: note: example printf here, will just be a printf in the future
+generators/testchipip/src/main/scala/uart/SimUART.scala:26:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/testchipip/src/main/scala/tsi/TSIToTileLink.scala:36:7: warning: module contains 1 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/testchipip/src/main/scala/tsi/TSIToTileLink.scala:137:15: note: example printf here, will just be a printf in the future
+generators/testchipip/src/main/scala/tsi/TSIToTileLink.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: warning: module contains 114 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:45:11: note: example printf here, will just be a printf in the future
+generators/rocket-chip/src/main/scala/tilelink/Monitor.scala:36:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+generators/chipyard/src/main/scala/harness/TestHarness.scala:19:7: warning: module contains 2 printf-encoded verification operation(s), which are deprecated and will be removed in the future
+generators/rocket-chip/src/main/scala/devices/debug/Periphery.scala:236:11: note: example printf here, will just be a printf in the future
+generators/chipyard/src/main/scala/harness/TestHarness.scala:19:7: note: For more information, see https://github.com/llvm/circt/issues/6970
+===-------------------------------------------------------------------------===
+                         ... Execution time report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 18.5545 seconds
+
+  ----User Time----  ----Wall Time----  ----Name----
+    1.0845 (  2.6%)    1.0845 (  5.8%)  FIR Parser
+    0.0276 (  0.1%)    0.0276 (  0.1%)    Parse annotations
+    0.0000 (  0.0%)    0.0000 (  0.0%)    Parse OMIR
+    0.8276 (  2.0%)    0.8276 (  4.5%)    Parse modules
+    0.1947 (  0.5%)    0.1947 (  1.0%)    Verify circuit
+   27.0032 ( 64.1%)   10.3531 ( 55.8%)  'firrtl.circuit' Pipeline
+    0.0128 (  0.0%)    0.0128 (  0.1%)    LowerOpenAggs
+    0.3256 (  0.8%)    0.3256 (  1.8%)    ResolvePaths
+    0.0178 (  0.0%)    0.0178 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    0.2066 (  0.5%)    0.2066 (  1.1%)    LowerFIRRTLAnnotations
+    0.0162 (  0.0%)    0.0162 (  0.1%)    LowerIntmodules
+    0.0161 (  0.0%)    0.0161 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    0.3317 (  0.8%)    0.0159 (  0.1%)    'firrtl.module' Pipeline
+    0.2182 (  0.5%)    0.0151 (  0.1%)      LowerIntrinsics
+    0.2453 (  0.6%)    0.2453 (  1.3%)    LowerSignatures
+    0.0000 (  0.0%)    0.0000 (  0.0%)    InjectDUTHierarchy
+    5.6577 ( 13.4%)    0.3695 (  2.0%)    'firrtl.module' Pipeline
+    0.6988 (  1.7%)    0.0711 (  0.4%)      PassiveWires
+    3.4150 (  8.1%)    0.1647 (  0.9%)      DropName
+    0.8621 (  2.0%)    0.0794 (  0.4%)      CSE
+    0.0084 (  0.0%)    0.0016 (  0.0%)        (A) DominanceInfo
+    0.1283 (  0.3%)    0.0104 (  0.1%)      LowerCHIRRTLPass
+    0.4978 (  1.2%)    0.0448 (  0.2%)      LowerMatches
+    0.7492 (  1.8%)    0.7492 (  4.0%)    InferWidths
+    0.0002 (  0.0%)    0.0002 (  0.0%)      (A) SymbolTable
+    0.0144 (  0.0%)    0.0144 (  0.1%)      (A) circt::hw::InnerSymbolTableCollection
+    0.3166 (  0.8%)    0.3166 (  1.7%)    MemToRegOfVec
+    0.4550 (  1.1%)    0.4550 (  2.5%)    InferResets
+    0.0113 (  0.0%)    0.0113 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    0.3759 (  0.9%)    0.3759 (  2.0%)    DropConst
+    0.0028 (  0.0%)    0.0028 (  0.0%)    HoistPassthrough
+    0.5830 (  1.4%)    0.5830 (  3.1%)    Dedup
+    0.0002 (  0.0%)    0.0002 (  0.0%)      (A) circt::firrtl::NLATable
+    0.0001 (  0.0%)    0.0001 (  0.0%)      (A) SymbolTable
+    0.7643 (  1.8%)    0.0605 (  0.3%)    'firrtl.module' Pipeline
+    0.7362 (  1.7%)    0.0604 (  0.3%)      FlattenMemory
+    0.8044 (  1.9%)    0.8044 (  4.3%)    LowerFIRRTLTypes
+    0.0001 (  0.0%)    0.0001 (  0.0%)      (A) SymbolTable
+    1.2648 (  3.0%)    0.1122 (  0.6%)    'any' Pipeline
+    1.2566 (  3.0%)    0.1119 (  0.6%)      ExpandWhens
+    2.3749 (  5.6%)    0.1841 (  1.0%)    'firrtl.module' Pipeline
+    1.1399 (  2.7%)    0.0968 (  0.5%)      SFCCompat
+    0.6122 (  1.5%)    0.0504 (  0.3%)      LayerMerge
+    0.5940 (  1.4%)    0.0491 (  0.3%)      LayerSink
+    0.0090 (  0.0%)    0.0036 (  0.0%)        (A) DominanceInfo
+    0.5503 (  1.3%)    0.5503 (  3.0%)    LowerLayers
+    0.7567 (  1.8%)    0.7567 (  4.1%)    Inliner
+    0.0001 (  0.0%)    0.0001 (  0.0%)      (A) SymbolTable
+    1.3087 (  3.1%)    0.1024 (  0.6%)    'firrtl.module' Pipeline
+    1.2992 (  3.1%)    0.1024 (  0.6%)      RandomizeRegisterInit
+    0.6191 (  1.5%)    0.6191 (  3.3%)    CheckCombLoops
+    0.0153 (  0.0%)    0.0153 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    4.9480 ( 11.7%)    0.3279 (  1.8%)    'firrtl.module' Pipeline
+    4.6143 ( 11.0%)    0.3156 (  1.7%)      Canonicalizer
+    0.3169 (  0.8%)    0.0264 (  0.1%)      InferReadWrite
+    0.3096 (  0.7%)    0.3096 (  1.7%)    LowerMemory
+    0.0116 (  0.0%)    0.0116 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    0.0000 (  0.0%)    0.0000 (  0.0%)      (A) SymbolTable
+    0.1901 (  0.5%)    0.1901 (  1.0%)    PrefixModules
+    0.0096 (  0.0%)    0.0096 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    0.0001 (  0.0%)    0.0001 (  0.0%)      (A) circt::firrtl::NLATable
+    1.0715 (  2.5%)    1.0715 (  5.8%)    IMConstProp
+    0.0153 (  0.0%)    0.0153 (  0.1%)    HoistPassthrough
+    0.0075 (  0.0%)    0.0075 (  0.0%)      (A) circt::firrtl::InstanceGraph
+    0.9257 (  2.2%)    0.9257 (  5.0%)  IMDeadCodeElim
+    0.0112 (  0.0%)    0.0112 (  0.1%)    (A) circt::firrtl::InstanceGraph
+    0.0001 (  0.0%)    0.0001 (  0.0%)    (A) SymbolTable
+    0.0081 (  0.0%)    0.0081 (  0.0%)    (A) circt::hw::InnerSymbolTableCollection
+    0.0089 (  0.0%)    0.0089 (  0.0%)  'firrtl.circuit' Pipeline
+    0.0089 (  0.0%)    0.0089 (  0.0%)    AddSeqMemPorts
+    0.0087 (  0.0%)    0.0087 (  0.0%)      (A) circt::firrtl::InstanceGraph
+    0.1583 (  0.4%)    0.1583 (  0.9%)  CreateSiFiveMetadata
+    0.0060 (  0.0%)    0.0060 (  0.0%)    (A) circt::firrtl::InstanceGraph
+    0.5495 (  1.3%)    0.5495 (  3.0%)  'firrtl.circuit' Pipeline
+    0.0542 (  0.1%)    0.0542 (  0.3%)    ExtractInstances
+    0.0091 (  0.0%)    0.0091 (  0.0%)      (A) circt::firrtl::InstanceGraph
+    0.0002 (  0.0%)    0.0002 (  0.0%)      (A) circt::firrtl::NLATable
+    0.0000 (  0.0%)    0.0000 (  0.0%)    GrandCentral
+    0.1445 (  0.3%)    0.1445 (  0.8%)    BlackBoxReader
+    0.3507 (  0.8%)    0.3507 (  1.9%)    SymbolDCE
+    0.2539 (  0.6%)    0.2539 (  1.4%)  InnerSymbolDCE
+    2.2275 (  5.3%)    0.9172 (  4.9%)  'firrtl.circuit' Pipeline
+    1.3103 (  3.1%)    0.1712 (  0.9%)    'firrtl.module' Pipeline
+    0.9718 (  2.3%)    0.1461 (  0.8%)      Canonicalizer
+    0.2870 (  0.7%)    0.0241 (  0.1%)      RegisterOptimizer
+    0.6668 (  1.6%)    0.6668 (  3.6%)    IMConstProp
+    0.0059 (  0.0%)    0.0059 (  0.0%)      (A) circt::firrtl::InstanceGraph
+    0.6709 (  1.6%)    0.6709 (  3.6%)  IMDeadCodeElim
+    0.0065 (  0.0%)    0.0065 (  0.0%)    (A) circt::firrtl::InstanceGraph
+    0.0000 (  0.0%)    0.0000 (  0.0%)    (A) SymbolTable
+    0.0074 (  0.0%)    0.0074 (  0.0%)    (A) circt::hw::InnerSymbolTableCollection
+    1.6031 (  3.8%)    0.8591 (  4.6%)  'firrtl.circuit' Pipeline
+    0.0000 (  0.0%)    0.0000 (  0.0%)    EmitOMIR
+    0.6415 (  1.5%)    0.0559 (  0.3%)    'firrtl.module' Pipeline
+    0.1208 (  0.3%)    0.0099 (  0.1%)      MergeConnections
+    0.4896 (  1.2%)    0.0461 (  0.2%)      Vectorization
+    0.0317 (  0.1%)    0.0317 (  0.2%)    ResolveTraces
+    0.0001 (  0.0%)    0.0001 (  0.0%)      (A) circt::firrtl::NLATable
+    0.0084 (  0.0%)    0.0084 (  0.0%)      (A) circt::hw::InnerSymbolTableCollection
+    0.2096 (  0.5%)    0.2096 (  1.1%)    LowerXMR
+    0.0066 (  0.0%)    0.0066 (  0.0%)      (A) circt::firrtl::InstanceGraph
+    0.3530 (  0.8%)    0.3530 (  1.9%)    LowerClasses
+    0.0052 (  0.0%)    0.0052 (  0.0%)      (A) circt::firrtl::InstanceGraph
+    0.0000 (  0.0%)    0.0000 (  0.0%)      (A) SymbolTable
+    0.0005 (  0.0%)    0.0005 (  0.0%)    VerifyObjectFields
+    0.0000 (  0.0%)    0.0000 (  0.0%)      (A) SymbolTable
+    0.1025 (  0.2%)    0.0068 (  0.0%)    'firrtl.module' Pipeline
+    0.0692 (  0.2%)    0.0061 (  0.0%)      Lint
+    0.5446 (  1.3%)    0.5446 (  2.9%)  LowerFIRRTLToHW
+    0.0071 (  0.0%)    0.0071 (  0.0%)    (A) circt::firrtl::InstanceGraph
+    0.0001 (  0.0%)    0.0001 (  0.0%)    (A) circt::firrtl::NLATable
+    2.0950 (  5.0%)    0.1534 (  0.8%)  'hw.module' Pipeline
+    0.3966 (  0.9%)    0.0450 (  0.2%)    CSE
+    0.0039 (  0.0%)    0.0006 (  0.0%)      (A) DominanceInfo
+    1.6854 (  4.0%)    0.1083 (  0.6%)    Canonicalizer
+    0.0136 (  0.0%)    0.0136 (  0.1%)  VerifyInnerRefNamespace
+    0.0003 (  0.0%)    0.0003 (  0.0%)  VerifyObjectFields
+    0.0001 (  0.0%)    0.0001 (  0.0%)    (A) SymbolTable
+    0.0170 (  0.0%)    0.0170 (  0.1%)  ExternalizeClockGate
+    0.0631 (  0.1%)    0.0631 (  0.3%)  LowerSimToSV
+    0.3910 (  0.9%)    0.3910 (  2.1%)  LowerSeqToSV
+    0.2756 (  0.7%)    0.0518 (  0.3%)  'hw.module' Pipeline
+    0.2563 (  0.6%)    0.0499 (  0.3%)    LowerVerifToSV
+    0.0866 (  0.2%)    0.0866 (  0.5%)  HWMemSimImpl
+    0.9475 (  2.2%)    0.1162 (  0.6%)  'hw.module' Pipeline
+    0.3623 (  0.9%)    0.0506 (  0.3%)    CSE
+    0.0076 (  0.0%)    0.0029 (  0.0%)      (A) DominanceInfo
+    0.3319 (  0.8%)    0.0377 (  0.2%)    Canonicalizer
+    0.1177 (  0.3%)    0.0122 (  0.1%)    CSE
+    0.0013 (  0.0%)    0.0002 (  0.0%)      (A) DominanceInfo
+    0.1054 (  0.3%)    0.0114 (  0.1%)    HWCleanup
+    0.0136 (  0.0%)    0.0136 (  0.1%)  VerifyInnerRefNamespace
+    0.0004 (  0.0%)    0.0004 (  0.0%)  VerifyObjectFields
+    0.0001 (  0.0%)    0.0001 (  0.0%)    (A) SymbolTable
+    0.3832 (  0.9%)    0.0317 (  0.2%)  'hw.module' Pipeline
+    0.0596 (  0.1%)    0.0088 (  0.0%)    HWLegalizeModules
+    0.2869 (  0.7%)    0.0228 (  0.1%)    PrettifyVerilog
+    0.1054 (  0.3%)    0.1054 (  0.6%)  StripDebugInfoWithPred
+    0.0710 (  0.2%)    0.0710 (  0.4%)  HWExportModuleHierarchy
+    0.0001 (  0.0%)    0.0001 (  0.0%)    (A) SymbolTable
+    0.0111 (  0.0%)    0.0111 (  0.1%)  VerifyInnerRefNamespace
+    0.0003 (  0.0%)    0.0003 (  0.0%)  VerifyObjectFields
+    0.7848 (  1.9%)    0.7848 (  4.2%)  ExportSplitVerilog
+    1.5462 (  3.7%)    0.3719 (  2.0%)  'builtin.module' Pipeline
+    0.1211 (  0.3%)    0.1211 (  0.7%)    HWLowerInstanceChoices
+    1.1743 (  2.8%)    0.0876 (  0.5%)    'hw.module' Pipeline
+    1.1578 (  2.7%)    0.0876 (  0.5%)      PrepareForEmission
+   -0.3379 ( -0.8%)   -0.3379 ( -1.8%)  Rest
+   42.1345 (100.0%)   18.5545 (100.0%)  Total
+sed -i 's/.*/& /' /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.mems.conf # need trailing space for SFC macrocompiler
+# If there are no BB's then the file might not be generated; ensure it exists
+touch /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/firrtl_black_box_resource_files.f
+/home/rfrost26/CompArchProject/chipyard/scripts/uniquify-module-names.py \
+	--model-hier-json /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/model_module_hierarchy.json \
+	--top-hier-json /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/top_module_hierarchy.json \
+	--in-all-filelist /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/filelist.f \
+	--in-bb-filelist /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/firrtl_black_box_resource_files.f \
+	--dut ChipTop \
+	--model TestHarness \
+	--target-dir /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral \
+	--out-dut-filelist /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.top.f \
+	--out-model-filelist /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.model.f \
+	--out-model-hier-json /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/model_module_hierarchy.uniquified.json \
+	--gcpath /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral
+sed -e 's;^;/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/;' /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/firrtl_black_box_resource_files.f > /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.bb.f
+sed -i 's/\.\///' /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.top.f
+sed -i 's/\.\///' /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.model.f
+sed -i 's/\.\///' /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.bb.f
+sort -u /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.top.f /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.model.f /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.bb.f > /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.all.f
+cp -f /home/rfrost26/CompArchProject/chipyard/generators/rocket-chip/src/main/resources/vsrc/TestDriver.v /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral
+echo "/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/TestDriver.v" >> /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/sim_files.f;
+mkdir -p /home/rfrost26/CompArchProject/chipyard/.classpath_cache/
+cd /home/rfrost26/CompArchProject/chipyard && java -jar /home/rfrost26/CompArchProject/chipyard/scripts/sbt-launch.jar -Dsbt.ivy.home=/home/rfrost26/CompArchProject/chipyard/.ivy2 -Dsbt.global.base=/home/rfrost26/CompArchProject/chipyard/.sbt -Dsbt.boot.directory=/home/rfrost26/CompArchProject/chipyard/.sbt/boot/ -Dsbt.color=always -Dsbt.supershell=false -Dsbt.server.forcestart=true ";project tapeout; set assembly / assemblyOutputPath := file(\"/home/rfrost26/CompArchProject/chipyard/.classpath_cache/tapeout.jar\"); assembly" && touch /home/rfrost26/CompArchProject/chipyard/.classpath_cache/tapeout.jar
+Picked up JAVA_TOOL_OPTIONS: -Xmx8G -Xss8M -Djava.io.tmpdir=/home/rfrost26/CompArchProject/chipyard/.java_tmp
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.8.2 (N/A Java 20.0.2-internal)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project chipyard-build from plugins.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/rfrost26/CompArchProject/chipyard/project[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project chipyardRoot from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project testchipip from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project barf from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project constellation from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project icenet from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project cva6 from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project ibex from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project sodor from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project radiance from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project midas_target_utils from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mresolving key references (48746 settings) ...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to chipyardRoot (in build file:/home/rfrost26/CompArchProject/chipyard/)[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to tapeout (in build file:/home/rfrost26/CompArchProject/chipyard/)[0m
+[0m[[0m[0minfo[0m] [0m[0mDefining assembly / assemblyOutputPath[0m
+[0m[[0m[0minfo[0m] [0m[0mThe new value will be used by assembly[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to tapeout (in build file:/home/rfrost26/CompArchProject/chipyard/)[0m
+[0m[[0m[0minfo[0m] [0m[0m185 file(s) merged using strategy 'Rename (Custom)' (Run the task at debug level to see the details)[0m
+[0m[[0m[0minfo[0m] [0m[0m4 file(s) merged using strategy 'Rename' (Run the task at debug level to see the details)[0m
+[0m[[0m[0minfo[0m] [0m[0m331 file(s) merged using strategy 'Discard' (Run the task at debug level to see the details)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt: /home/rfrost26/CompArchProject/chipyard/.classpath_cache/tapeout.jar[0m
+[0m[[0m[0minfo[0m] [0m[0mJar hash: e31902f82487f8c633feb93f5433099c1e47a98e[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 3 s, completed Dec 3, 2025, 1:42:59 PM[0m
+[0J/home/rfrost26/CompArchProject/chipyard/scripts/split-mems-conf.py \
+	--in-smems-conf /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.mems.conf \
+	--in-model-hrchy-json /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/model_module_hierarchy.uniquified.json \
+	--dut-module-name ChipTop \
+	--model-module-name TestHarness \
+	--out-dut-smems-conf /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.top.mems.conf \
+	--out-model-smems-conf /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.model.mems.conf
+[ -f /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/custom.mems.conf ] && cat /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/custom.mems.conf >> /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.top.mems.conf
+make: [/home/rfrost26/CompArchProject/chipyard/common.mk:283: /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.top.mems.conf] Error 1 (ignored)
+cd /home/rfrost26/CompArchProject/chipyard && java -cp /home/rfrost26/CompArchProject/chipyard/.classpath_cache/tapeout.jar tapeout.macros.MacroCompiler -n /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.top.mems.conf -v /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/chipyard.harness.TestHarness.ModularBoomConfig.top.mems.v -f /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.top.mems.fir --mode synflops
+Picked up JAVA_TOOL_OPTIONS: -Xmx8G -Xss8M -Djava.io.tmpdir=/home/rfrost26/CompArchProject/chipyard/.java_tmp
+touch /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/chipyard.harness.TestHarness.ModularBoomConfig.top.mems.v /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.top.mems.fir
+cd /home/rfrost26/CompArchProject/chipyard && java -cp /home/rfrost26/CompArchProject/chipyard/.classpath_cache/tapeout.jar tapeout.macros.MacroCompiler  -n /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.model.mems.conf -v /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/chipyard.harness.TestHarness.ModularBoomConfig.model.mems.v -f /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.model.mems.fir --mode synflops
+Picked up JAVA_TOOL_OPTIONS: -Xmx8G -Xss8M -Djava.io.tmpdir=/home/rfrost26/CompArchProject/chipyard/.java_tmp
+WARNING: Empty *.mems.conf file. No memories generated.
+touch /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/chipyard.harness.TestHarness.ModularBoomConfig.model.mems.v /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.model.mems.fir
+rm -f /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/sim_files.common.f
+sort -u /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/sim_files.f /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.all.f | grep -v '.*\.\(svh\|h\|conf\)$' >> /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/sim_files.common.f
+echo "/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/chipyard.harness.TestHarness.ModularBoomConfig.top.mems.v" >> /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/sim_files.common.f
+echo "/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/chipyard.harness.TestHarness.ModularBoomConfig.model.mems.v" >> /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/sim_files.common.f

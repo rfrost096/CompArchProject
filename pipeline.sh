@@ -3,8 +3,21 @@
 BINARY_NAME="dijkstra_boom"
 
 CONFIG_LIST=(
-    # "64 4 8 medium medium medium TAGELBPD"
-    "64 4 8 medium large  medium TAGELBPD"
+    "64 4 8 medium medium medium TAGELBPD"
+    "64 4 4 medium medium medium TAGELBPD"
+    
+    "64 4 8 medium large medium TAGELBPD"
+    "64 4 8 large large medium TAGELBPD"
+    "64 4 8 large medium large TAGELBPD"
+    "64 4 8 medium large large TAGELBPD"
+
+    "64 4 8 medium medium medium Boom2BPD"
+    "64 4 8 large large large Boom2BPD"
+
+    "64 4 8 large large large TAGELBPD"
+    "64 2 8 large large large TAGELBPD"
+    "128 4 8 large large large TAGELBPD"
+    "128 2 8 large large large TAGELBPD"
 )
 
 CACHE_LINE_SIZE_OPTIONS=(32 64 128)
@@ -208,19 +221,30 @@ EOF
 
         rm -f "$SIZE_LOG"
 
-        conda run --no-capture-output -p /home/ryan/miniforge3/envs/yosys_env yosys $YS_SCRIPT > "$SIZE_LOG" 2>&1
+        CONDA_ENV_PATH=""
+
+        if [ "$USER" == "rfrost26" ]; then
+            CONDA_ENV_PATH="/home/rfrost26/.conda/envs/yosys_env"
+        elif [ "$USER" == "ryan" ]; then
+            CONDA_ENV_PATH="/home/ryan/miniforge3/envs/yosys_env"
+        else
+            echo "user $USER Yosys path not defined" >&2
+            exit 1
+        fi
+
+        conda run --no-capture-output -p $CONDA_ENV_PATH yosys $YS_SCRIPT > "$SIZE_LOG" 2>&1
 
         if grep -q "=== design hierarchy ===" "$SIZE_LOG"; then
-            echo "size succeeded failed$CONFIG_NAME"
+            echo "size analysis succeeded$CONFIG_NAME"
 
             {
                 echo "DATE: $(date)"
                 echo "ID: $CONFIG_ID"
                 echo "CONFIG:$CONFIG_NAME"
 
-                awk '/=== design hierarchy ===/{flag=1; buf=""} flag{buf=buf $0 ORS} flag && /===/ && !/=== design hierarchy ===/{flag=0; last=buf} END{printf "%s", last}' "$SIZE_LOG"
+                awk '/=== design hierarchy ===/{flag=1; buf=""} flag && /Warnings/{flag=0; last=buf} flag{buf=buf $0 ORS} END{printf "%s", last}' "$SIZE_LOG"
 
-                echo -e "\n----" 
+                echo -e "\n----\n\n" 
             } >> $CONFIG_SIZE_FILE
         
         else

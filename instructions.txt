@@ -1,0 +1,10 @@
+1. Pull this repo
+2. conda create --name yosys_env -c conda-forge yosys
+3. Update CONDA_ENV_PATH in pipeline.sh to use your path to yosys conda yosys_env
+4. CompArchProject$ git submodule update --init chipyard
+5. cd chipyard
+6. ./build-setup.sh riscv-tools -s 9
+7. cd ..
+8. ./init.sh
+9. cd chipyard/sims/verilator
+10. ../../../pipeline
