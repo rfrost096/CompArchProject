@@ -1,0 +1,338 @@
+DATE: Tue Dec 16 12:41:45 PM EST 2025
+ID: 64_4_8_medium_medium_medium_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:medium, 
+    SUPER_SCALAR_WIDTH:medium, 
+    WORKING_WINDOW_WIDTH:medium, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 27624
+           instret : 46078
+branch misprediction : 53
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 9
+           D$ miss : 1
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----
+DATE: Tue Dec 16 01:02:14 PM EST 2025
+ID: 64_4_8_small_small_small_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:small, 
+    SUPER_SCALAR_WIDTH:small, 
+    WORKING_WINDOW_WIDTH:small, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 48010
+           instret : 46078
+branch misprediction : 47
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 9
+           D$ miss : 1
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----
+DATE: Tue Dec 16 01:06:41 PM EST 2025
+ID: 64_4_8_small_medium_small_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:small, 
+    SUPER_SCALAR_WIDTH:medium, 
+    WORKING_WINDOW_WIDTH:small, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 31006
+           instret : 46078
+branch misprediction : 50
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 9
+           D$ miss : 1
+        D$ release : 1
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----
+DATE: Tue Dec 16 01:11:14 PM EST 2025
+ID: 64_4_8_small_medium_medium_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:small, 
+    SUPER_SCALAR_WIDTH:medium, 
+    WORKING_WINDOW_WIDTH:medium, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 29454
+           instret : 46078
+branch misprediction : 60
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 9
+           D$ miss : 1
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----
+DATE: Tue Dec 16 01:15:36 PM EST 2025
+ID: 64_4_8_medium_medium_small_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:medium, 
+    SUPER_SCALAR_WIDTH:medium, 
+    WORKING_WINDOW_WIDTH:small, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 30217
+           instret : 46078
+branch misprediction : 44
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 9
+           D$ miss : 1
+        D$ release : 1
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----
+DATE: Tue Dec 16 01:20:44 PM EST 2025
+ID: 64_4_8_medium_large_medium_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:medium, 
+    SUPER_SCALAR_WIDTH:large, 
+    WORKING_WINDOW_WIDTH:medium, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 25826
+           instret : 46078
+branch misprediction : 57
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 9
+           D$ miss : 1
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----
+DATE: Tue Dec 16 01:26:03 PM EST 2025
+ID: 64_4_8_medium_large_large_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:medium, 
+    SUPER_SCALAR_WIDTH:large, 
+    WORKING_WINDOW_WIDTH:large, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 25740
+           instret : 46078
+branch misprediction : 52
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 9
+           D$ miss : 1
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----
+DATE: Tue Dec 16 01:31:16 PM EST 2025
+ID: 64_4_8_large_large_medium_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:large, 
+    SUPER_SCALAR_WIDTH:large, 
+    WORKING_WINDOW_WIDTH:medium, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 23839
+           instret : 46078
+branch misprediction : 55
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 8
+           D$ miss : 1
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----
+DATE: Tue Dec 16 01:36:52 PM EST 2025
+ID: 64_4_8_large_large_large_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:large, 
+    SUPER_SCALAR_WIDTH:large, 
+    WORKING_WINDOW_WIDTH:large, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 23848
+           instret : 46078
+branch misprediction : 58
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 8
+           D$ miss : 1
+        D$ release : 1
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----
+DATE: Tue Dec 16 01:40:53 PM EST 2025
+ID: 64_4_8_small_small_small_Boom2BPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:small, 
+    SUPER_SCALAR_WIDTH:small, 
+    WORKING_WINDOW_WIDTH:small, 
+    BRANCH_PREDICTOR:Boom2BPD
+
+            cycles : 48295
+           instret : 46078
+branch misprediction : 73
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 9
+           D$ miss : 1
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----
+DATE: Tue Dec 16 01:45:01 PM EST 2025
+ID: 64_2_8_small_small_small_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:2, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:small, 
+    SUPER_SCALAR_WIDTH:small, 
+    WORKING_WINDOW_WIDTH:small, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 48079
+           instret : 46078
+branch misprediction : 53
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 9
+           D$ miss : 1
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----
+DATE: Tue Dec 16 01:49:10 PM EST 2025
+ID: 32_4_8_small_small_small_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:32, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:small, 
+    SUPER_SCALAR_WIDTH:small, 
+    WORKING_WINDOW_WIDTH:small, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 48010
+           instret : 46078
+branch misprediction : 47
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 9
+           D$ miss : 1
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----
+DATE: Tue Dec 16 05:07:27 PM EST 2025
+ID: 64_4_4_medium_medium_medium_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:4, 
+    FRONTEND_WIDTH:medium, 
+    SUPER_SCALAR_WIDTH:medium, 
+    WORKING_WINDOW_WIDTH:medium, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 27624
+           instret : 46078
+branch misprediction : 53
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 9
+           D$ miss : 1
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+
+
+----

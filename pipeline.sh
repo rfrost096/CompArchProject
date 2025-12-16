@@ -1,23 +1,31 @@
 
 # This script should be run from within CompArchProject/chipyard/sims/verilator
-BINARY_NAME="dijkstra_boom"
+BINARY_NAME="aes"
 
 CONFIG_LIST=(
-    "64 4 8 medium medium medium TAGELBPD"
     "64 4 4 medium medium medium TAGELBPD"
     
-    "64 4 8 medium large medium TAGELBPD"
-    "64 4 8 large large medium TAGELBPD"
-    "64 4 8 large medium large TAGELBPD"
-    "64 4 8 medium large large TAGELBPD"
+    "64 4 8 small small small TAGELBPD"
 
-    "64 4 8 medium medium medium Boom2BPD"
-    "64 4 8 large large large Boom2BPD"
+    "64 4 8 small medium small TAGELBPD"
+    
+    "64 4 8 small medium medium TAGELBPD"
+    "64 4 8 medium medium small TAGELBPD"
+
+    "64 4 8 medium medium medium TAGELBPD"
+
+    "64 4 8 medium large medium TAGELBPD"
+
+    "64 4 8 medium large large TAGELBPD"
+    "64 4 8 large large medium TAGELBPD"
 
     "64 4 8 large large large TAGELBPD"
-    "64 2 8 large large large TAGELBPD"
-    "128 4 8 large large large TAGELBPD"
-    "128 2 8 large large large TAGELBPD"
+
+    "64 4 8 small small small Boom2BPD"
+
+    "64 4 8 small small small TAGELBPD"
+    "64 2 8 small small small TAGELBPD"
+    "32 4 8 small small small TAGELBPD"
 )
 
 CACHE_LINE_SIZE_OPTIONS=(32 64 128)
