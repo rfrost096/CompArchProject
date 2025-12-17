@@ -1,6 +1,6 @@
 
 # This script should be run from within CompArchProject/chipyard/sims/verilator
-BINARY_NAME="aes"
+BINARY_NAME="dijkstra_boom"
 
 CONFIG_LIST=(
     "64 4 4 medium medium medium TAGELBPD"

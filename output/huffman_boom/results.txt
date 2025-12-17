@@ -1,4 +1,4 @@
-DATE: Wed Dec 17 07:33:47 AM EST 2025
+DATE: Tue Dec 16 07:31:25 PM EST 2025
 ID: 64_4_4_medium_medium_medium_TAGELBPD
 CONFIG:
     CACHE_LINE_SIZE:64, 
@@ -9,22 +9,22 @@ CONFIG:
     WORKING_WINDOW_WIDTH:medium, 
     BRANCH_PREDICTOR:TAGELBPD
 
-            cycles : 9348
-           instret : 7006
-branch misprediction : 351
+            cycles : 23651
+           instret : 25235
+branch misprediction : 445
 control
              flush : 12
    branch resolved : 0
-           I$ miss : 6
-           D$ miss : 33
-        D$ release : 1
+           I$ miss : 47
+           D$ miss : 13
+        D$ release : 2
          ITLB miss : 0
          DTLB miss : 0
        L2 TLB miss : 0
 
 
 ----
-DATE: Wed Dec 17 07:37:50 AM EST 2025
+DATE: Tue Dec 16 07:36:28 PM EST 2025
 ID: 64_4_8_small_small_small_TAGELBPD
 CONFIG:
     CACHE_LINE_SIZE:64, 
@@ -35,14 +35,14 @@ CONFIG:
     WORKING_WINDOW_WIDTH:small, 
     BRANCH_PREDICTOR:TAGELBPD
 
-            cycles : 11833
-           instret : 7006
-branch misprediction : 356
+            cycles : 32763
+           instret : 25235
+branch misprediction : 440
 control
              flush : 12
    branch resolved : 0
-           I$ miss : 6
-           D$ miss : 31
+           I$ miss : 47
+           D$ miss : 12
         D$ release : 1
          ITLB miss : 0
          DTLB miss : 0
@@ -50,7 +50,7 @@ control
 
 
 ----
-DATE: Wed Dec 17 07:42:11 AM EST 2025
+DATE: Tue Dec 16 07:41:25 PM EST 2025
 ID: 64_4_8_small_medium_small_TAGELBPD
 CONFIG:
     CACHE_LINE_SIZE:64, 
@@ -61,14 +61,14 @@ CONFIG:
     WORKING_WINDOW_WIDTH:small, 
     BRANCH_PREDICTOR:TAGELBPD
 
-            cycles : 9937
-           instret : 7006
-branch misprediction : 372
+            cycles : 26575
+           instret : 25235
+branch misprediction : 473
 control
              flush : 12
    branch resolved : 0
-           I$ miss : 6
-           D$ miss : 33
+           I$ miss : 47
+           D$ miss : 12
         D$ release : 1
          ITLB miss : 0
          DTLB miss : 0
@@ -76,7 +76,7 @@ control
 
 
 ----
-DATE: Wed Dec 17 07:46:43 AM EST 2025
+DATE: Tue Dec 16 07:46:31 PM EST 2025
 ID: 64_4_8_small_medium_medium_TAGELBPD
 CONFIG:
     CACHE_LINE_SIZE:64, 
@@ -87,22 +87,22 @@ CONFIG:
     WORKING_WINDOW_WIDTH:medium, 
     BRANCH_PREDICTOR:TAGELBPD
 
-            cycles : 9934
-           instret : 7006
-branch misprediction : 373
+            cycles : 25646
+           instret : 25235
+branch misprediction : 493
 control
              flush : 12
    branch resolved : 0
-           I$ miss : 6
-           D$ miss : 34
-        D$ release : 1
+           I$ miss : 47
+           D$ miss : 15
+        D$ release : 2
          ITLB miss : 0
          DTLB miss : 0
        L2 TLB miss : 0
 
 
 ----
-DATE: Wed Dec 17 07:51:05 AM EST 2025
+DATE: Tue Dec 16 07:51:54 PM EST 2025
 ID: 64_4_8_medium_medium_small_TAGELBPD
 CONFIG:
     CACHE_LINE_SIZE:64, 
@@ -113,22 +113,22 @@ CONFIG:
     WORKING_WINDOW_WIDTH:small, 
     BRANCH_PREDICTOR:TAGELBPD
 
-            cycles : 9712
-           instret : 7006
-branch misprediction : 360
+            cycles : 26125
+           instret : 25235
+branch misprediction : 465
 control
              flush : 12
    branch resolved : 0
-           I$ miss : 6
-           D$ miss : 34
-        D$ release : 1
+           I$ miss : 47
+           D$ miss : 12
+        D$ release : 0
          ITLB miss : 0
          DTLB miss : 0
        L2 TLB miss : 0
 
 
 ----
-DATE: Wed Dec 17 07:55:40 AM EST 2025
+DATE: Tue Dec 16 07:57:15 PM EST 2025
 ID: 64_4_8_medium_medium_medium_TAGELBPD
 CONFIG:
     CACHE_LINE_SIZE:64, 
@@ -139,22 +139,22 @@ CONFIG:
     WORKING_WINDOW_WIDTH:medium, 
     BRANCH_PREDICTOR:TAGELBPD
 
-            cycles : 9348
-           instret : 7006
-branch misprediction : 351
+            cycles : 23651
+           instret : 25235
+branch misprediction : 445
 control
              flush : 12
    branch resolved : 0
-           I$ miss : 6
-           D$ miss : 33
-        D$ release : 1
+           I$ miss : 47
+           D$ miss : 13
+        D$ release : 2
          ITLB miss : 0
          DTLB miss : 0
        L2 TLB miss : 0
 
 
 ----
-DATE: Wed Dec 17 08:00:47 AM EST 2025
+DATE: Tue Dec 16 08:02:45 PM EST 2025
 ID: 64_4_8_medium_large_medium_TAGELBPD
 CONFIG:
     CACHE_LINE_SIZE:64, 
@@ -165,14 +165,14 @@ CONFIG:
     WORKING_WINDOW_WIDTH:medium, 
     BRANCH_PREDICTOR:TAGELBPD
 
-            cycles : 9508
-           instret : 7006
-branch misprediction : 372
+            cycles : 23548
+           instret : 25235
+branch misprediction : 470
 control
              flush : 12
    branch resolved : 0
-           I$ miss : 6
-           D$ miss : 33
+           I$ miss : 47
+           D$ miss : 12
         D$ release : 1
          ITLB miss : 0
          DTLB miss : 0
@@ -180,7 +180,7 @@ control
 
 
 ----
-DATE: Wed Dec 17 08:06:10 AM EST 2025
+DATE: Tue Dec 16 08:08:37 PM EST 2025
 ID: 64_4_8_medium_large_large_TAGELBPD
 CONFIG:
     CACHE_LINE_SIZE:64, 
@@ -191,22 +191,22 @@ CONFIG:
     WORKING_WINDOW_WIDTH:large, 
     BRANCH_PREDICTOR:TAGELBPD
 
-            cycles : 9414
-           instret : 7006
-branch misprediction : 371
+            cycles : 23569
+           instret : 25235
+branch misprediction : 514
 control
              flush : 12
    branch resolved : 0
-           I$ miss : 6
-           D$ miss : 34
-        D$ release : 1
+           I$ miss : 44
+           D$ miss : 13
+        D$ release : 2
          ITLB miss : 0
          DTLB miss : 0
        L2 TLB miss : 0
 
 
 ----
-DATE: Wed Dec 17 08:11:26 AM EST 2025
+DATE: Tue Dec 16 08:14:25 PM EST 2025
 ID: 64_4_8_large_large_medium_TAGELBPD
 CONFIG:
     CACHE_LINE_SIZE:64, 
@@ -217,22 +217,22 @@ CONFIG:
     WORKING_WINDOW_WIDTH:medium, 
     BRANCH_PREDICTOR:TAGELBPD
 
-            cycles : 7898
-           instret : 7006
-branch misprediction : 356
+            cycles : 20492
+           instret : 25235
+branch misprediction : 485
 control
              flush : 12
    branch resolved : 0
-           I$ miss : 4
-           D$ miss : 32
-        D$ release : 2
+           I$ miss : 45
+           D$ miss : 13
+        D$ release : 1
          ITLB miss : 0
          DTLB miss : 0
        L2 TLB miss : 0
 
 
 ----
-DATE: Wed Dec 17 08:17:02 AM EST 2025
+DATE: Tue Dec 16 08:20:33 PM EST 2025
 ID: 64_4_8_large_large_large_TAGELBPD
 CONFIG:
     CACHE_LINE_SIZE:64, 
@@ -243,22 +243,22 @@ CONFIG:
     WORKING_WINDOW_WIDTH:large, 
     BRANCH_PREDICTOR:TAGELBPD
 
-            cycles : 7839
-           instret : 7006
-branch misprediction : 356
+            cycles : 20368
+           instret : 25235
+branch misprediction : 488
 control
-             flush : 12
+             flush : 19
    branch resolved : 0
-           I$ miss : 4
-           D$ miss : 32
-        D$ release : 2
+           I$ miss : 46
+           D$ miss : 13
+        D$ release : 1
          ITLB miss : 0
          DTLB miss : 0
        L2 TLB miss : 0
 
 
 ----
-DATE: Wed Dec 17 08:20:58 AM EST 2025
+DATE: Tue Dec 16 08:24:55 PM EST 2025
 ID: 64_4_8_small_small_small_Boom2BPD
 CONFIG:
     CACHE_LINE_SIZE:64, 
@@ -269,22 +269,22 @@ CONFIG:
     WORKING_WINDOW_WIDTH:small, 
     BRANCH_PREDICTOR:Boom2BPD
 
-            cycles : 12285
-           instret : 7006
-branch misprediction : 383
+            cycles : 34116
+           instret : 25235
+branch misprediction : 555
 control
              flush : 12
    branch resolved : 0
-           I$ miss : 6
-           D$ miss : 31
-        D$ release : 1
+           I$ miss : 47
+           D$ miss : 12
+        D$ release : 0
          ITLB miss : 0
          DTLB miss : 0
        L2 TLB miss : 0
 
 
 ----
-DATE: Wed Dec 17 08:24:58 AM EST 2025
+DATE: Tue Dec 16 08:29:25 PM EST 2025
 ID: 64_2_8_small_small_small_TAGELBPD
 CONFIG:
     CACHE_LINE_SIZE:64, 
@@ -295,22 +295,22 @@ CONFIG:
     WORKING_WINDOW_WIDTH:small, 
     BRANCH_PREDICTOR:TAGELBPD
 
-            cycles : 11794
-           instret : 7006
-branch misprediction : 352
+            cycles : 32763
+           instret : 25235
+branch misprediction : 440
 control
              flush : 12
    branch resolved : 0
-           I$ miss : 6
-           D$ miss : 31
-        D$ release : 2
+           I$ miss : 47
+           D$ miss : 12
+        D$ release : 1
          ITLB miss : 0
          DTLB miss : 0
        L2 TLB miss : 0
 
 
 ----
-DATE: Wed Dec 17 08:29:02 AM EST 2025
+DATE: Tue Dec 16 08:33:52 PM EST 2025
 ID: 32_4_8_small_small_small_TAGELBPD
 CONFIG:
     CACHE_LINE_SIZE:32, 
@@ -321,14 +321,14 @@ CONFIG:
     WORKING_WINDOW_WIDTH:small, 
     BRANCH_PREDICTOR:TAGELBPD
 
-            cycles : 11833
-           instret : 7006
-branch misprediction : 356
+            cycles : 32763
+           instret : 25235
+branch misprediction : 440
 control
              flush : 12
    branch resolved : 0
-           I$ miss : 6
-           D$ miss : 31
+           I$ miss : 47
+           D$ miss : 12
         D$ release : 1
          ITLB miss : 0
          DTLB miss : 0

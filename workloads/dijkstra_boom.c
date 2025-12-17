@@ -10,7 +10,7 @@
 #include <stdlib.h> 
 
 // Number of vertices in the graph
-#define V 5 // Changing to increase cycles
+#define V 20 // Changing to increase cycles
 
 // Function to find the vertex with the minimum distance
 // value from the set of vertices not yet included in the
@@ -132,11 +132,10 @@ int main()
 
     hpm_init(); // Adding hpm init
 
-    int dist = DijkstrasAlgo(graph, 0);
+    // changing to volatile so compiler doesn't optmize away
+    volatile int dist = DijkstrasAlgo(graph, 0);
 
     hpm_print(); // Adding hpm print
-
-    printf("dist: %d\n", dist);
 
     return 0;
 }

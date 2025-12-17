@@ -130,7 +130,7 @@ main(void)
 
   hpm_init(); // Adding hpm init
 
-  for (int i = 0; i < 1000; i++) {
+  for (int i = 0; i < 10; i++) {
 
     /* Fill v[] with a function of known FFT: */
     for(k=0; k<N; k++) {

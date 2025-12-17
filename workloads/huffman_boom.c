@@ -242,7 +242,14 @@ struct MinHeapNode* buildHuffmanTree(char data[],
 
     // Step 4: The remaining node is the
     // root node and the tree is complete.
-    return extractMin(minHeap);
+
+    // Adding this due to heap issue
+    struct MinHeapNode* root = extractMin(minHeap);
+
+    free(minHeap->array);
+    free(minHeap);
+
+    return root;
 }
 
 // Prints huffman codes from the root of Huffman Tree.
@@ -277,6 +284,15 @@ void printCodes(struct MinHeapNode* root, int arr[],
     }
 }
 
+// Adding this due to heap error
+void freeHuffmanTree(struct MinHeapNode* root)
+{
+    if (root == NULL) return;
+    freeHuffmanTree(root->left);
+    freeHuffmanTree(root->right);
+    free(root);
+}
+
 // The main function that builds a
 // Huffman Tree and print codes by traversing
 // the built Huffman Tree
@@ -292,6 +308,8 @@ void HuffmanCodes(char data[], int freq[], int size)
     int arr[MAX_TREE_HT], top = 0;
 
     // printCodes(root, arr, top);
+
+    freeHuffmanTree(root);
 }
 
 // Driver code
@@ -306,7 +324,7 @@ int main()
 
     hpm_init(); // Adding hpm init
 
-    for (int i = 0; i < 1000; i++) {
+    for (int i = 0; i < 10; i++) {
         for(int j = 0; j < size; j++) {
             // generating random frequencies
             freq[j] = (rand() % 100) + 1;

@@ -25,15 +25,13 @@ BusPacket.cpp:104:9: warning: 'nonnull' argument 'this' compared to NULL [-Wnonn
 g++ -DNO_STORAGE -Wall -DDEBUG_BUILD  -O3  -o IniReader.o -c IniReader.cpp
 g++ -DNO_STORAGE -Wall -DDEBUG_BUILD  -O3  -o MemoryController.o -c MemoryController.cpp
 [0m[[0m[0minfo[0m] [0m[0mloading settings for project chipyard-build from plugins.sbt ...[0m
-g++ -DNO_STORAGE -Wall -DDEBUG_BUILD  -O3  -o MemorySystem.o -c MemorySystem.cpp
 [0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/rfrost26/CompArchProject/chipyard/project[0m
+g++ -DNO_STORAGE -Wall -DDEBUG_BUILD  -O3  -o MemorySystem.o -c MemorySystem.cpp
 g++ -DNO_STORAGE -Wall -DDEBUG_BUILD  -O3  -o MultiChannelMemorySystem.o -c MultiChannelMemorySystem.cpp
 g++ -DNO_STORAGE -Wall -DDEBUG_BUILD  -O3  -o PrintMacros.o -c PrintMacros.cpp
 g++ -DNO_STORAGE -Wall -DDEBUG_BUILD  -O3  -o Rank.o -c Rank.cpp
 g++ -DNO_STORAGE -Wall -DDEBUG_BUILD  -O3  -o SimulatorObject.o -c SimulatorObject.cpp
 g++ -DNO_STORAGE -Wall -DDEBUG_BUILD  -O3  -o Transaction.o -c Transaction.cpp
-ar crs libdramsim.a AddressMapping.o Bank.o BankState.o BusPacket.o ClockDomain.o CommandQueue.o IniReader.o MemoryController.o MemorySystem.o MultiChannelMemorySystem.o PrintMacros.o Rank.o SimulatorObject.o Transaction.o
-make[1]: Leaving directory '/home/rfrost26/CompArchProject/chipyard/tools/DRAMSim2'
 [0m[[0m[0minfo[0m] [0m[0mloading settings for project chipyardRoot from build.sbt ...[0m
 [0m[[0m[0minfo[0m] [0m[0mloading settings for project testchipip from build.sbt ...[0m
 [0m[[0m[0minfo[0m] [0m[0mloading settings for project barf from build.sbt ...[0m
@@ -43,6 +41,8 @@ make[1]: Leaving directory '/home/rfrost26/CompArchProject/chipyard/tools/DRAMSi
 [0m[[0m[0minfo[0m] [0m[0mloading settings for project ibex from build.sbt ...[0m
 [0m[[0m[0minfo[0m] [0m[0mloading settings for project sodor from build.sbt ...[0m
 [0m[[0m[0minfo[0m] [0m[0mloading settings for project radiance from build.sbt ...[0m
+ar crs libdramsim.a AddressMapping.o Bank.o BankState.o BusPacket.o ClockDomain.o CommandQueue.o IniReader.o MemoryController.o MemorySystem.o MultiChannelMemorySystem.o PrintMacros.o Rank.o SimulatorObject.o Transaction.o
+make[1]: Leaving directory '/home/rfrost26/CompArchProject/chipyard/tools/DRAMSim2'
 [0m[[0m[0minfo[0m] [0m[0mloading settings for project midas_target_utils from build.sbt ...[0m
 [0m[[0m[0minfo[0m] [0m[0mresolving key references (48746 settings) ...[0m
 [0m[[0m[0minfo[0m] [0m[0mset current project to chipyardRoot (in build file:/home/rfrost26/CompArchProject/chipyard/)[0m
@@ -57,7 +57,7 @@ Warning: Tried to extract the base path for relative glob tools/firrtl2/src/main
 Warning: Tried to extract the base path for relative glob tools/firrtl2/src/main/java/**/*.{java,scala}. To disable this warning, re-run the program with java option, -Dsbt.io.implicit.relative.glob.conversion=allow
 [0m[[0m[33mwarn[0m] [0m[0mmultiple main classes detected: run 'show discoveredMainClasses' to see the list[0m
 [0m[[0m[0minfo[0m] [0m[0mAssembly jar up to date: /home/rfrost26/CompArchProject/chipyard/.classpath_cache/chipyard.jar[0m
-[0m[[0m[32msuccess[0m] [0m[0mTotal time: 5 s, completed Dec 3, 2025, 7:54:25 PM[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 5 s, completed Dec 17, 2025, 7:51:22 AM[0m
 [0Jmkdir -p /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig
 mkdir -p /home/rfrost26/CompArchProject/chipyard/.classpath_cache/
 (set -o pipefail && 	cd /home/rfrost26/CompArchProject/chipyard && java -cp /home/rfrost26/CompArchProject/chipyard/.classpath_cache/chipyard.jar chipyard.Generator  --target-dir /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig --name chipyard.harness.TestHarness.ModularBoomConfig --top-module chipyard.harness.TestHarness --legacy-configs chipyard:ModularBoomConfig   | tee /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.chisel.log)
@@ -89,9 +89,6 @@ L2 InclusiveCache Client Map:
 
 [0m[[0m[0minfo[0m] [0m[0mset current project to chipyardRoot (in build file:/home/rfrost26/CompArchProject/chipyard/)[0m
 [0m[[0m[0minfo[0m] [0m[0mset current project to tapeout (in build file:/home/rfrost26/CompArchProject/chipyard/)[0m
-[0m[[0m[0minfo[0m] [0m[0mDefining assembly / assemblyOutputPath[0m
-[0m[[0m[0minfo[0m] [0m[0mThe new value will be used by assembly[0m
-[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
 [C0] ======BOOM Tile 0 Params======
 
 [C0] ====Overall Frontend Params====
@@ -197,6 +194,9 @@ L2 InclusiveCache Client Map:
 Interrupt map (2 harts 1 interrupts):
   [1, 1] => uart_0
 
+[0m[[0m[0minfo[0m] [0m[0mDefining assembly / assemblyOutputPath[0m
+[0m[[0m[0minfo[0m] [0m[0mThe new value will be used by assembly[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
 <stdin>:82.18-87.5: Warning (simple_bus_reg): /soc/cbus_clock: missing or empty reg/ranges property
 <stdin>:109.18-114.5: Warning (simple_bus_reg): /soc/fbus_clock: missing or empty reg/ranges property
 <stdin>:125.18-130.5: Warning (simple_bus_reg): /soc/mbus_clock: missing or empty reg/ranges property
@@ -524,7 +524,7 @@ Harness binder clock is 100.0
 [warn] There were 30 warning(s) during hardware elaboration.
 [0m[[0m[0minfo[0m] [0m[0mset current project to tapeout (in build file:/home/rfrost26/CompArchProject/chipyard/)[0m
 [0m[[0m[0minfo[0m] [0m[0mAssembly jar up to date: /home/rfrost26/CompArchProject/chipyard/.classpath_cache/tapeout.jar[0m
-[0m[[0m[32msuccess[0m] [0m[0mTotal time: 1 s, completed Dec 3, 2025, 7:54:37 PM[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 1 s, completed Dec 17, 2025, 7:51:34 AM[0m
 [0Jecho "$mfc_extra_anno_contents" > /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.extrafirtool.anno.json
 jq -s '[.[][]]' /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.anno.json /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.extrafirtool.anno.json > /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.appended.anno.json
 rm -rf /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral
@@ -1159,158 +1159,158 @@ generators/chipyard/src/main/scala/harness/TestHarness.scala:19:7: note: For mor
 ===-------------------------------------------------------------------------===
                          ... Execution time report ...
 ===-------------------------------------------------------------------------===
-  Total Execution Time: 17.3436 seconds
+  Total Execution Time: 19.2982 seconds
 
   ----User Time----  ----Wall Time----  ----Name----
-    1.0954 (  2.7%)    1.0954 (  6.3%)  FIR Parser
-    0.0265 (  0.1%)    0.0265 (  0.2%)    Parse annotations
+    1.0889 (  2.8%)    1.0889 (  5.6%)  FIR Parser
+    0.0256 (  0.1%)    0.0256 (  0.1%)    Parse annotations
     0.0000 (  0.0%)    0.0000 (  0.0%)    Parse OMIR
-    0.6818 (  1.7%)    0.6818 (  3.9%)    Parse modules
-    0.3484 (  0.9%)    0.3484 (  2.0%)    Verify circuit
-   25.5828 ( 64.1%)    9.6941 ( 55.9%)  'firrtl.circuit' Pipeline
-    0.0122 (  0.0%)    0.0122 (  0.1%)    LowerOpenAggs
-    0.5414 (  1.4%)    0.5414 (  3.1%)    ResolvePaths
-    0.0108 (  0.0%)    0.0108 (  0.1%)      (A) circt::firrtl::InstanceGraph
-    0.3241 (  0.8%)    0.3241 (  1.9%)    LowerFIRRTLAnnotations
-    0.0124 (  0.0%)    0.0124 (  0.1%)    LowerIntmodules
-    0.0124 (  0.0%)    0.0124 (  0.1%)      (A) circt::firrtl::InstanceGraph
-    0.3522 (  0.9%)    0.0174 (  0.1%)    'firrtl.module' Pipeline
-    0.2516 (  0.6%)    0.0163 (  0.1%)      LowerIntrinsics
-    0.3740 (  0.9%)    0.3740 (  2.2%)    LowerSignatures
+    0.7060 (  1.8%)    0.7060 (  3.7%)    Parse modules
+    0.3242 (  0.8%)    0.3242 (  1.7%)    Verify circuit
+   25.2843 ( 65.3%)   11.4615 ( 59.4%)  'firrtl.circuit' Pipeline
+    0.0133 (  0.0%)    0.0133 (  0.1%)    LowerOpenAggs
+    0.5213 (  1.3%)    0.5213 (  2.7%)    ResolvePaths
+    0.0102 (  0.0%)    0.0102 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    0.3481 (  0.9%)    0.3481 (  1.8%)    LowerFIRRTLAnnotations
+    0.0111 (  0.0%)    0.0111 (  0.1%)    LowerIntmodules
+    0.0111 (  0.0%)    0.0111 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    0.3413 (  0.9%)    0.0276 (  0.1%)    'firrtl.module' Pipeline
+    0.2682 (  0.7%)    0.0274 (  0.1%)      LowerIntrinsics
+    0.4943 (  1.3%)    0.4943 (  2.6%)    LowerSignatures
     0.0000 (  0.0%)    0.0000 (  0.0%)    InjectDUTHierarchy
-    4.9912 ( 12.5%)    0.3725 (  2.1%)    'firrtl.module' Pipeline
-    0.6350 (  1.6%)    0.0649 (  0.4%)      PassiveWires
-    2.9724 (  7.4%)    0.1742 (  1.0%)      DropName
-    0.7677 (  1.9%)    0.0807 (  0.5%)      CSE
-    0.0081 (  0.0%)    0.0008 (  0.0%)        (A) DominanceInfo
-    0.1143 (  0.3%)    0.0097 (  0.1%)      LowerCHIRRTLPass
-    0.4374 (  1.1%)    0.0451 (  0.3%)      LowerMatches
-    0.6923 (  1.7%)    0.6923 (  4.0%)    InferWidths
-    0.0002 (  0.0%)    0.0002 (  0.0%)      (A) SymbolTable
-    0.0129 (  0.0%)    0.0129 (  0.1%)      (A) circt::hw::InnerSymbolTableCollection
-    0.2034 (  0.5%)    0.2034 (  1.2%)    MemToRegOfVec
-    0.2735 (  0.7%)    0.2735 (  1.6%)    InferResets
-    0.0124 (  0.0%)    0.0124 (  0.1%)      (A) circt::firrtl::InstanceGraph
-    0.1848 (  0.5%)    0.1848 (  1.1%)    DropConst
-    0.0021 (  0.0%)    0.0021 (  0.0%)    HoistPassthrough
-    0.3397 (  0.9%)    0.3397 (  2.0%)    Dedup
+    4.2905 ( 11.1%)    0.3620 (  1.9%)    'firrtl.module' Pipeline
+    0.6903 (  1.8%)    0.0800 (  0.4%)      PassiveWires
+    2.2380 (  5.8%)    0.1569 (  0.8%)      DropName
+    0.7579 (  2.0%)    0.0745 (  0.4%)      CSE
+    0.0066 (  0.0%)    0.0006 (  0.0%)        (A) DominanceInfo
+    0.1170 (  0.3%)    0.0106 (  0.1%)      LowerCHIRRTLPass
+    0.4421 (  1.1%)    0.0421 (  0.2%)      LowerMatches
+    0.7711 (  2.0%)    0.7711 (  4.0%)    InferWidths
+    0.0001 (  0.0%)    0.0001 (  0.0%)      (A) SymbolTable
+    0.0146 (  0.0%)    0.0146 (  0.1%)      (A) circt::hw::InnerSymbolTableCollection
+    0.3469 (  0.9%)    0.3469 (  1.8%)    MemToRegOfVec
+    0.4711 (  1.2%)    0.4711 (  2.4%)    InferResets
+    0.0148 (  0.0%)    0.0148 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    0.3909 (  1.0%)    0.3909 (  2.0%)    DropConst
+    0.0027 (  0.0%)    0.0027 (  0.0%)    HoistPassthrough
+    0.3838 (  1.0%)    0.3838 (  2.0%)    Dedup
     0.0001 (  0.0%)    0.0001 (  0.0%)      (A) circt::firrtl::NLATable
     0.0001 (  0.0%)    0.0001 (  0.0%)      (A) SymbolTable
-    0.6528 (  1.6%)    0.0905 (  0.5%)    'firrtl.module' Pipeline
-    0.6418 (  1.6%)    0.0905 (  0.5%)      FlattenMemory
-    0.6210 (  1.6%)    0.6210 (  3.6%)    LowerFIRRTLTypes
+    0.8331 (  2.2%)    0.0647 (  0.3%)    'firrtl.module' Pipeline
+    0.8129 (  2.1%)    0.0646 (  0.3%)      FlattenMemory
+    0.7620 (  2.0%)    0.7620 (  3.9%)    LowerFIRRTLTypes
     0.0000 (  0.0%)    0.0000 (  0.0%)      (A) SymbolTable
-    1.2202 (  3.1%)    0.0917 (  0.5%)    'any' Pipeline
-    1.2097 (  3.0%)    0.0914 (  0.5%)      ExpandWhens
-    2.2164 (  5.6%)    0.1763 (  1.0%)    'firrtl.module' Pipeline
-    0.9536 (  2.4%)    0.0879 (  0.5%)      SFCCompat
-    0.6442 (  1.6%)    0.0543 (  0.3%)      LayerMerge
-    0.5856 (  1.5%)    0.0538 (  0.3%)      LayerSink
-    0.0045 (  0.0%)    0.0038 (  0.0%)        (A) DominanceInfo
-    0.6421 (  1.6%)    0.6421 (  3.7%)    LowerLayers
-    0.8387 (  2.1%)    0.8387 (  4.8%)    Inliner
-    0.0000 (  0.0%)    0.0000 (  0.0%)      (A) SymbolTable
-    1.4226 (  3.6%)    0.1006 (  0.6%)    'firrtl.module' Pipeline
-    1.4180 (  3.6%)    0.1005 (  0.6%)      RandomizeRegisterInit
-    0.5172 (  1.3%)    0.5172 (  3.0%)    CheckCombLoops
-    0.0126 (  0.0%)    0.0126 (  0.1%)      (A) circt::firrtl::InstanceGraph
-    5.0333 ( 12.6%)    0.3379 (  1.9%)    'firrtl.module' Pipeline
-    4.7347 ( 11.9%)    0.3273 (  1.9%)      Canonicalizer
-    0.2794 (  0.7%)    0.0252 (  0.1%)      InferReadWrite
-    0.2634 (  0.7%)    0.2634 (  1.5%)    LowerMemory
-    0.0087 (  0.0%)    0.0087 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    1.1681 (  3.0%)    0.0898 (  0.5%)    'any' Pipeline
+    1.1447 (  3.0%)    0.0896 (  0.5%)      ExpandWhens
+    2.1143 (  5.5%)    0.1699 (  0.9%)    'firrtl.module' Pipeline
+    1.0051 (  2.6%)    0.0822 (  0.4%)      SFCCompat
+    0.5577 (  1.4%)    0.0450 (  0.2%)      LayerMerge
+    0.5386 (  1.4%)    0.0432 (  0.2%)      LayerSink
+    0.0038 (  0.0%)    0.0031 (  0.0%)        (A) DominanceInfo
+    0.8967 (  2.3%)    0.8967 (  4.6%)    LowerLayers
+    0.7094 (  1.8%)    0.7094 (  3.7%)    Inliner
     0.0001 (  0.0%)    0.0001 (  0.0%)      (A) SymbolTable
-    0.2131 (  0.5%)    0.2131 (  1.2%)    PrefixModules
-    0.0485 (  0.1%)    0.0485 (  0.3%)      (A) circt::firrtl::InstanceGraph
-    0.0003 (  0.0%)    0.0003 (  0.0%)      (A) circt::firrtl::NLATable
-    0.8903 (  2.2%)    0.8903 (  5.1%)    IMConstProp
-    0.0144 (  0.0%)    0.0144 (  0.1%)    HoistPassthrough
-    0.0076 (  0.0%)    0.0076 (  0.0%)      (A) circt::firrtl::InstanceGraph
-    0.8321 (  2.1%)    0.8321 (  4.8%)  IMDeadCodeElim
-    0.0086 (  0.0%)    0.0086 (  0.0%)    (A) circt::firrtl::InstanceGraph
+    1.0974 (  2.8%)    0.0812 (  0.4%)    'firrtl.module' Pipeline
+    1.0919 (  2.8%)    0.0812 (  0.4%)      RandomizeRegisterInit
+    0.6343 (  1.6%)    0.6343 (  3.3%)    CheckCombLoops
+    0.0173 (  0.0%)    0.0173 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    3.9781 ( 10.3%)    0.2778 (  1.4%)    'firrtl.module' Pipeline
+    3.6708 (  9.5%)    0.2664 (  1.4%)      Canonicalizer
+    0.2896 (  0.7%)    0.0219 (  0.1%)      InferReadWrite
+    0.3095 (  0.8%)    0.3095 (  1.6%)    LowerMemory
+    0.0113 (  0.0%)    0.0113 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    0.0001 (  0.0%)    0.0001 (  0.0%)      (A) SymbolTable
+    0.2064 (  0.5%)    0.2064 (  1.1%)    PrefixModules
+    0.0098 (  0.0%)    0.0098 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    0.0001 (  0.0%)    0.0001 (  0.0%)      (A) circt::firrtl::NLATable
+    1.1183 (  2.9%)    1.1183 (  5.8%)    IMConstProp
+    0.0172 (  0.0%)    0.0172 (  0.1%)    HoistPassthrough
+    0.0100 (  0.0%)    0.0100 (  0.1%)      (A) circt::firrtl::InstanceGraph
+    0.9088 (  2.3%)    0.9088 (  4.7%)  IMDeadCodeElim
+    0.0081 (  0.0%)    0.0081 (  0.0%)    (A) circt::firrtl::InstanceGraph
     0.0001 (  0.0%)    0.0001 (  0.0%)    (A) SymbolTable
-    0.0078 (  0.0%)    0.0078 (  0.0%)    (A) circt::hw::InnerSymbolTableCollection
-    0.0042 (  0.0%)    0.0042 (  0.0%)  'firrtl.circuit' Pipeline
-    0.0042 (  0.0%)    0.0042 (  0.0%)    AddSeqMemPorts
-    0.0038 (  0.0%)    0.0038 (  0.0%)      (A) circt::firrtl::InstanceGraph
-    0.1392 (  0.3%)    0.1392 (  0.8%)  CreateSiFiveMetadata
-    0.0035 (  0.0%)    0.0035 (  0.0%)    (A) circt::firrtl::InstanceGraph
-    0.4995 (  1.3%)    0.4995 (  2.9%)  'firrtl.circuit' Pipeline
-    0.0479 (  0.1%)    0.0479 (  0.3%)    ExtractInstances
-    0.0069 (  0.0%)    0.0069 (  0.0%)      (A) circt::firrtl::InstanceGraph
-    0.0001 (  0.0%)    0.0001 (  0.0%)      (A) circt::firrtl::NLATable
+    0.0106 (  0.0%)    0.0106 (  0.1%)    (A) circt::hw::InnerSymbolTableCollection
+    0.0046 (  0.0%)    0.0046 (  0.0%)  'firrtl.circuit' Pipeline
+    0.0046 (  0.0%)    0.0046 (  0.0%)    AddSeqMemPorts
+    0.0042 (  0.0%)    0.0042 (  0.0%)      (A) circt::firrtl::InstanceGraph
+    0.1570 (  0.4%)    0.1570 (  0.8%)  CreateSiFiveMetadata
+    0.0074 (  0.0%)    0.0074 (  0.0%)    (A) circt::firrtl::InstanceGraph
+    0.4865 (  1.3%)    0.4865 (  2.5%)  'firrtl.circuit' Pipeline
+    0.0459 (  0.1%)    0.0459 (  0.2%)    ExtractInstances
+    0.0068 (  0.0%)    0.0068 (  0.0%)      (A) circt::firrtl::InstanceGraph
+    0.0002 (  0.0%)    0.0002 (  0.0%)      (A) circt::firrtl::NLATable
     0.0000 (  0.0%)    0.0000 (  0.0%)    GrandCentral
-    0.1157 (  0.3%)    0.1157 (  0.7%)    BlackBoxReader
-    0.3358 (  0.8%)    0.3358 (  1.9%)    SymbolDCE
-    0.2283 (  0.6%)    0.2283 (  1.3%)  InnerSymbolDCE
-    1.9231 (  4.8%)    0.9614 (  5.5%)  'firrtl.circuit' Pipeline
-    0.9617 (  2.4%)    0.1323 (  0.8%)    'firrtl.module' Pipeline
-    0.7259 (  1.8%)    0.1128 (  0.7%)      Canonicalizer
-    0.2162 (  0.5%)    0.0194 (  0.1%)      RegisterOptimizer
-    0.7191 (  1.8%)    0.7191 (  4.1%)    IMConstProp
-    0.0053 (  0.0%)    0.0053 (  0.0%)      (A) circt::firrtl::InstanceGraph
-    0.5944 (  1.5%)    0.5944 (  3.4%)  IMDeadCodeElim
-    0.0060 (  0.0%)    0.0060 (  0.0%)    (A) circt::firrtl::InstanceGraph
+    0.1413 (  0.4%)    0.1413 (  0.7%)    BlackBoxReader
+    0.2992 (  0.8%)    0.2992 (  1.6%)    SymbolDCE
+    0.2390 (  0.6%)    0.2390 (  1.2%)  InnerSymbolDCE
+    1.8569 (  4.8%)    0.9916 (  5.1%)  'firrtl.circuit' Pipeline
+    0.8653 (  2.2%)    0.1256 (  0.7%)    'firrtl.module' Pipeline
+    0.6566 (  1.7%)    0.1066 (  0.6%)      Canonicalizer
+    0.1972 (  0.5%)    0.0189 (  0.1%)      RegisterOptimizer
+    0.7454 (  1.9%)    0.7454 (  3.9%)    IMConstProp
+    0.0064 (  0.0%)    0.0064 (  0.0%)      (A) circt::firrtl::InstanceGraph
+    0.6598 (  1.7%)    0.6598 (  3.4%)  IMDeadCodeElim
+    0.0069 (  0.0%)    0.0069 (  0.0%)    (A) circt::firrtl::InstanceGraph
     0.0000 (  0.0%)    0.0000 (  0.0%)    (A) SymbolTable
-    0.0103 (  0.0%)    0.0103 (  0.1%)    (A) circt::hw::InnerSymbolTableCollection
-    1.4692 (  3.7%)    0.7623 (  4.4%)  'firrtl.circuit' Pipeline
+    0.0051 (  0.0%)    0.0051 (  0.0%)    (A) circt::hw::InnerSymbolTableCollection
+    1.3494 (  3.5%)    0.7513 (  3.9%)  'firrtl.circuit' Pipeline
     0.0000 (  0.0%)    0.0000 (  0.0%)    EmitOMIR
-    0.5562 (  1.4%)    0.0562 (  0.3%)    'firrtl.module' Pipeline
-    0.0856 (  0.2%)    0.0092 (  0.1%)      MergeConnections
-    0.4378 (  1.1%)    0.0461 (  0.3%)      Vectorization
-    0.0272 (  0.1%)    0.0272 (  0.2%)    ResolveTraces
+    0.5144 (  1.3%)    0.0564 (  0.3%)    'firrtl.module' Pipeline
+    0.0762 (  0.2%)    0.0088 (  0.0%)      MergeConnections
+    0.4189 (  1.1%)    0.0471 (  0.2%)      Vectorization
+    0.0221 (  0.1%)    0.0221 (  0.1%)    ResolveTraces
     0.0001 (  0.0%)    0.0001 (  0.0%)      (A) circt::firrtl::NLATable
-    0.0081 (  0.0%)    0.0081 (  0.0%)      (A) circt::hw::InnerSymbolTableCollection
-    0.1880 (  0.5%)    0.1880 (  1.1%)    LowerXMR
-    0.0073 (  0.0%)    0.0073 (  0.0%)      (A) circt::firrtl::InstanceGraph
-    0.2874 (  0.7%)    0.2874 (  1.7%)    LowerClasses
-    0.0101 (  0.0%)    0.0101 (  0.1%)      (A) circt::firrtl::InstanceGraph
-    0.0000 (  0.0%)    0.0000 (  0.0%)      (A) SymbolTable
-    0.0003 (  0.0%)    0.0003 (  0.0%)    VerifyObjectFields
+    0.0042 (  0.0%)    0.0042 (  0.0%)      (A) circt::hw::InnerSymbolTableCollection
+    0.1920 (  0.5%)    0.1920 (  1.0%)    LowerXMR
+    0.0067 (  0.0%)    0.0067 (  0.0%)      (A) circt::firrtl::InstanceGraph
+    0.3139 (  0.8%)    0.3139 (  1.6%)    LowerClasses
+    0.0054 (  0.0%)    0.0054 (  0.0%)      (A) circt::firrtl::InstanceGraph
     0.0001 (  0.0%)    0.0001 (  0.0%)      (A) SymbolTable
-    0.1507 (  0.4%)    0.0076 (  0.0%)    'firrtl.module' Pipeline
-    0.1172 (  0.3%)    0.0073 (  0.0%)      Lint
-    0.4825 (  1.2%)    0.4825 (  2.8%)  LowerFIRRTLToHW
-    0.0055 (  0.0%)    0.0055 (  0.0%)    (A) circt::firrtl::InstanceGraph
+    0.0004 (  0.0%)    0.0004 (  0.0%)    VerifyObjectFields
+    0.0001 (  0.0%)    0.0001 (  0.0%)      (A) SymbolTable
+    0.0836 (  0.2%)    0.0054 (  0.0%)    'firrtl.module' Pipeline
+    0.0594 (  0.2%)    0.0047 (  0.0%)      Lint
+    0.4747 (  1.2%)    0.4747 (  2.5%)  LowerFIRRTLToHW
+    0.0060 (  0.0%)    0.0060 (  0.0%)    (A) circt::firrtl::InstanceGraph
     0.0001 (  0.0%)    0.0001 (  0.0%)    (A) circt::firrtl::NLATable
-    2.0179 (  5.1%)    0.1371 (  0.8%)  'hw.module' Pipeline
-    0.3584 (  0.9%)    0.0374 (  0.2%)    CSE
-    0.0037 (  0.0%)    0.0008 (  0.0%)      (A) DominanceInfo
-    1.6507 (  4.1%)    0.0996 (  0.6%)    Canonicalizer
-    0.0125 (  0.0%)    0.0125 (  0.1%)  VerifyInnerRefNamespace
-    0.0003 (  0.0%)    0.0003 (  0.0%)  VerifyObjectFields
+    1.4439 (  3.7%)    0.1277 (  0.7%)  'hw.module' Pipeline
+    0.3560 (  0.9%)    0.0405 (  0.2%)    CSE
+    0.0032 (  0.0%)    0.0004 (  0.0%)      (A) DominanceInfo
+    1.0793 (  2.8%)    0.0872 (  0.5%)    Canonicalizer
+    0.0120 (  0.0%)    0.0120 (  0.1%)  VerifyInnerRefNamespace
+    0.0004 (  0.0%)    0.0004 (  0.0%)  VerifyObjectFields
     0.0001 (  0.0%)    0.0001 (  0.0%)    (A) SymbolTable
-    0.0233 (  0.1%)    0.0233 (  0.1%)  ExternalizeClockGate
-    0.0539 (  0.1%)    0.0539 (  0.3%)  LowerSimToSV
-    0.3207 (  0.8%)    0.3207 (  1.8%)  LowerSeqToSV
-    0.3301 (  0.8%)    0.0437 (  0.3%)  'hw.module' Pipeline
-    0.2765 (  0.7%)    0.0414 (  0.2%)    LowerVerifToSV
-    0.1009 (  0.3%)    0.1009 (  0.6%)  HWMemSimImpl
-    1.1861 (  3.0%)    0.1112 (  0.6%)  'hw.module' Pipeline
-    0.4397 (  1.1%)    0.0484 (  0.3%)    CSE
-    0.0106 (  0.0%)    0.0032 (  0.0%)      (A) DominanceInfo
-    0.3854 (  1.0%)    0.0373 (  0.2%)    Canonicalizer
-    0.1591 (  0.4%)    0.0131 (  0.1%)    CSE
-    0.0184 (  0.0%)    0.0047 (  0.0%)      (A) DominanceInfo
-    0.1071 (  0.3%)    0.0107 (  0.1%)    HWCleanup
-    0.0164 (  0.0%)    0.0164 (  0.1%)  VerifyInnerRefNamespace
-    0.0003 (  0.0%)    0.0003 (  0.0%)  VerifyObjectFields
+    0.0126 (  0.0%)    0.0126 (  0.1%)  ExternalizeClockGate
+    0.0535 (  0.1%)    0.0535 (  0.3%)  LowerSimToSV
+    0.3437 (  0.9%)    0.3437 (  1.8%)  LowerSeqToSV
+    0.2917 (  0.8%)    0.0333 (  0.2%)  'hw.module' Pipeline
+    0.2633 (  0.7%)    0.0333 (  0.2%)    LowerVerifToSV
+    0.0882 (  0.2%)    0.0882 (  0.5%)  HWMemSimImpl
+    1.0848 (  2.8%)    0.1117 (  0.6%)  'hw.module' Pipeline
+    0.4012 (  1.0%)    0.0503 (  0.3%)    CSE
+    0.0089 (  0.0%)    0.0041 (  0.0%)      (A) DominanceInfo
+    0.3458 (  0.9%)    0.0335 (  0.2%)    Canonicalizer
+    0.1162 (  0.3%)    0.0120 (  0.1%)    CSE
+    0.0010 (  0.0%)    0.0002 (  0.0%)      (A) DominanceInfo
+    0.1260 (  0.3%)    0.0105 (  0.1%)    HWCleanup
+    0.0110 (  0.0%)    0.0110 (  0.1%)  VerifyInnerRefNamespace
+    0.0005 (  0.0%)    0.0005 (  0.0%)  VerifyObjectFields
     0.0001 (  0.0%)    0.0001 (  0.0%)    (A) SymbolTable
-    0.3945 (  1.0%)    0.0335 (  0.2%)  'hw.module' Pipeline
-    0.0526 (  0.1%)    0.0069 (  0.0%)    HWLegalizeModules
-    0.2823 (  0.7%)    0.0264 (  0.2%)    PrettifyVerilog
-    0.0966 (  0.2%)    0.0966 (  0.6%)  StripDebugInfoWithPred
-    0.0686 (  0.2%)    0.0686 (  0.4%)  HWExportModuleHierarchy
-    0.0001 (  0.0%)    0.0001 (  0.0%)    (A) SymbolTable
-    0.0164 (  0.0%)    0.0164 (  0.1%)  VerifyInnerRefNamespace
-    0.0003 (  0.0%)    0.0003 (  0.0%)  VerifyObjectFields
-    0.7274 (  1.8%)    0.7274 (  4.2%)  ExportSplitVerilog
-    1.4234 (  3.6%)    0.3355 (  1.9%)  'builtin.module' Pipeline
-    0.1186 (  0.3%)    0.1186 (  0.7%)    HWLowerInstanceChoices
-    1.0879 (  2.7%)    0.0925 (  0.5%)    'hw.module' Pipeline
-    1.0620 (  2.7%)    0.0917 (  0.5%)      PrepareForEmission
-   -0.3005 ( -0.8%)   -0.3005 ( -1.7%)  Rest
-   39.9175 (100.0%)   17.3436 (100.0%)  Total
+    0.3649 (  0.9%)    0.0335 (  0.2%)  'hw.module' Pipeline
+    0.0628 (  0.2%)    0.0054 (  0.0%)    HWLegalizeModules
+    0.2677 (  0.7%)    0.0274 (  0.1%)    PrettifyVerilog
+    0.0919 (  0.2%)    0.0919 (  0.5%)  StripDebugInfoWithPred
+    0.0683 (  0.2%)    0.0683 (  0.4%)  HWExportModuleHierarchy
+    0.0000 (  0.0%)    0.0000 (  0.0%)    (A) SymbolTable
+    0.0173 (  0.0%)    0.0173 (  0.1%)  VerifyInnerRefNamespace
+    0.0004 (  0.0%)    0.0004 (  0.0%)  VerifyObjectFields
+    0.7778 (  2.0%)    0.7778 (  4.0%)  ExportSplitVerilog
+    1.2801 (  3.3%)    0.3289 (  1.7%)  'builtin.module' Pipeline
+    0.0998 (  0.3%)    0.0998 (  0.5%)    HWLowerInstanceChoices
+    0.9512 (  2.5%)    0.0807 (  0.4%)    'hw.module' Pipeline
+    0.9385 (  2.4%)    0.0805 (  0.4%)      PrepareForEmission
+   -0.2954 ( -0.8%)   -0.2954 ( -1.5%)  Rest
+   38.7208 (100.0%)   19.2982 (100.0%)  Total
 sed -i 's/.*/& /' /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/chipyard.harness.TestHarness.ModularBoomConfig.mems.conf # need trailing space for SFC macrocompiler
 # If there are no BB's then the file might not be generated; ensure it exists
 touch /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/firrtl_black_box_resource_files.f
@@ -1628,11 +1628,11 @@ make[1]: Entering directory '/home/rfrost26/CompArchProject/chipyard/sims/verila
 /home/rfrost26/CompArchProject/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++  -I.  -MMD -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -O3 -std=c++17 -I/home/rfrost26/CompArchProject/chipyard/.conda-env/riscv-tools/include -I/home/rfrost26/CompArchProject/chipyard/tools/DRAMSim2 -I/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral   -DVERILATOR -DVL_TIME_CONTEXT   -fcoroutines -Os -c -o SimTSI.o /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/SimTSI.cc
 /home/rfrost26/CompArchProject/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++  -I.  -MMD -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -O3 -std=c++17 -I/home/rfrost26/CompArchProject/chipyard/.conda-env/riscv-tools/include -I/home/rfrost26/CompArchProject/chipyard/tools/DRAMSim2 -I/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral   -DVERILATOR -DVL_TIME_CONTEXT   -fcoroutines -Os -c -o SimUART.o /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/SimUART.cc
 /home/rfrost26/CompArchProject/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++  -I.  -MMD -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -O3 -std=c++17 -I/home/rfrost26/CompArchProject/chipyard/.conda-env/riscv-tools/include -I/home/rfrost26/CompArchProject/chipyard/tools/DRAMSim2 -I/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral   -DVERILATOR -DVL_TIME_CONTEXT   -fcoroutines -Os -c -o mm.o /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/mm.cc
-/home/rfrost26/CompArchProject/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++  -I.  -MMD -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -O3 -std=c++17 -I/home/rfrost26/CompArchProject/chipyard/.conda-env/riscv-tools/include -I/home/rfrost26/CompArchProject/chipyard/tools/DRAMSim2 -I/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral   -DVERILATOR -DVL_TIME_CONTEXT   -fcoroutines -Os -c -o mm_dramsim2.o /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/mm_dramsim2.cc
 /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/SimDRAM.cc: In function 'void* memory_init(int, long long int, long long int, long long int, long long int, long long int, long long int, int)':
 /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/SimDRAM.cc:87:52: warning: narrowing conversion of 'mem_size' from 'long long int' to 'size_t' {aka 'long unsigned int'} [-Wnarrowing]
    87 |       backing_mem_data[chip_id][mem_base] = {data, mem_size};
       |                                                    ^~~~~~~~
+/home/rfrost26/CompArchProject/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++  -I.  -MMD -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -O3 -std=c++17 -I/home/rfrost26/CompArchProject/chipyard/.conda-env/riscv-tools/include -I/home/rfrost26/CompArchProject/chipyard/tools/DRAMSim2 -I/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral   -DVERILATOR -DVL_TIME_CONTEXT   -fcoroutines -Os -c -o mm_dramsim2.o /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/mm_dramsim2.cc
 /home/rfrost26/CompArchProject/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++  -I.  -MMD -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -O3 -std=c++17 -I/home/rfrost26/CompArchProject/chipyard/.conda-env/riscv-tools/include -I/home/rfrost26/CompArchProject/chipyard/tools/DRAMSim2 -I/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral   -DVERILATOR -DVL_TIME_CONTEXT   -fcoroutines -Os -c -o remote_bitbang.o /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/remote_bitbang.cc
 /home/rfrost26/CompArchProject/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++  -I.  -MMD -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -O3 -std=c++17 -I/home/rfrost26/CompArchProject/chipyard/.conda-env/riscv-tools/include -I/home/rfrost26/CompArchProject/chipyard/tools/DRAMSim2 -I/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral   -DVERILATOR -DVL_TIME_CONTEXT   -fcoroutines -Os -c -o testchip_htif.o /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/testchip_htif.cc
 /home/rfrost26/CompArchProject/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++  -I.  -MMD -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include -I/home/rfrost26/CompArchProject/chipyard/.conda-env/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -O3 -std=c++17 -I/home/rfrost26/CompArchProject/chipyard/.conda-env/riscv-tools/include -I/home/rfrost26/CompArchProject/chipyard/tools/DRAMSim2 -I/home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral   -DVERILATOR -DVL_TIME_CONTEXT   -fcoroutines -Os -c -o testchip_tsi.o /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/testchip_tsi.cc
@@ -1867,17 +1867,16 @@ make[1]: Leaving directory '/home/rfrost26/CompArchProject/chipyard/sims/verilat
 	 \
 	</dev/null 2> >(spike-dasm > /home/rfrost26/CompArchProject/chipyard/sims/verilator/output/chipyard.harness.TestHarness.ModularBoomConfig/dijkstra_boom.out) | tee /home/rfrost26/CompArchProject/chipyard/sims/verilator/output/chipyard.harness.TestHarness.ModularBoomConfig/dijkstra_boom.log)
 [UART] UART0 is here (stdin/stdout).
-            cycles : 1121
-           instret : 463
-branch misprediction : 42
+            cycles : 9348
+           instret : 7006
+branch misprediction : 351
 control-flow target misprediction : 0
              flush : 12
    branch resolved : 0
-           I$ miss : 5
-           D$ miss : 3
-        D$ release : 0
+           I$ miss : 6
+           D$ miss : 33
+        D$ release : 1
          ITLB miss : 0
          DTLB miss : 0
        L2 TLB miss : 0
-dist: 7
 - /home/rfrost26/CompArchProject/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.ModularBoomConfig/gen-collateral/TestDriver.v:158: Verilog $finish

@@ -1,0 +1,324 @@
+DATE: Wed Dec  3 07:58:31 PM EST 2025
+ID: 64_4_8_medium_medium_medium_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:medium, 
+    SUPER_SCALAR_WIDTH:medium, 
+    WORKING_WINDOW_WIDTH:medium, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 1121
+           instret : 463
+branch misprediction : 42
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 5
+           D$ miss : 3
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+dist: 7
+
+
+----
+DATE: Wed Dec  3 08:05:34 PM EST 2025
+ID: 64_4_4_medium_medium_medium_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:4, 
+    FRONTEND_WIDTH:medium, 
+    SUPER_SCALAR_WIDTH:medium, 
+    WORKING_WINDOW_WIDTH:medium, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 1121
+           instret : 463
+branch misprediction : 42
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 5
+           D$ miss : 3
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+dist: 7
+
+
+----
+DATE: Wed Dec  3 08:10:21 PM EST 2025
+ID: 64_4_8_medium_large_medium_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:medium, 
+    SUPER_SCALAR_WIDTH:large, 
+    WORKING_WINDOW_WIDTH:medium, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 1105
+           instret : 463
+branch misprediction : 42
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 6
+           D$ miss : 3
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+dist: 7
+
+
+----
+DATE: Wed Dec  3 08:15:31 PM EST 2025
+ID: 64_4_8_large_large_medium_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:large, 
+    SUPER_SCALAR_WIDTH:large, 
+    WORKING_WINDOW_WIDTH:medium, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 1115
+           instret : 463
+branch misprediction : 46
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 4
+           D$ miss : 3
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+dist: 7
+
+
+----
+DATE: Wed Dec  3 08:20:28 PM EST 2025
+ID: 64_4_8_large_medium_large_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:large, 
+    SUPER_SCALAR_WIDTH:medium, 
+    WORKING_WINDOW_WIDTH:large, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 1110
+           instret : 463
+branch misprediction : 45
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 4
+           D$ miss : 3
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+dist: 7
+
+
+----
+DATE: Wed Dec  3 08:25:33 PM EST 2025
+ID: 64_4_8_medium_large_large_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:medium, 
+    SUPER_SCALAR_WIDTH:large, 
+    WORKING_WINDOW_WIDTH:large, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 1172
+           instret : 463
+branch misprediction : 47
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 6
+           D$ miss : 3
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+dist: 7
+
+
+----
+DATE: Wed Dec  3 08:29:49 PM EST 2025
+ID: 64_4_8_medium_medium_medium_Boom2BPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:medium, 
+    SUPER_SCALAR_WIDTH:medium, 
+    WORKING_WINDOW_WIDTH:medium, 
+    BRANCH_PREDICTOR:Boom2BPD
+
+            cycles : 1182
+           instret : 463
+branch misprediction : 41
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 5
+           D$ miss : 3
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+dist: 7
+
+
+----
+DATE: Wed Dec  3 08:35:09 PM EST 2025
+ID: 64_4_8_large_large_large_Boom2BPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:large, 
+    SUPER_SCALAR_WIDTH:large, 
+    WORKING_WINDOW_WIDTH:large, 
+    BRANCH_PREDICTOR:Boom2BPD
+
+            cycles : 1102
+           instret : 463
+branch misprediction : 43
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 4
+           D$ miss : 3
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+dist: 7
+
+
+----
+DATE: Wed Dec  3 08:40:30 PM EST 2025
+ID: 64_4_8_large_large_large_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:large, 
+    SUPER_SCALAR_WIDTH:large, 
+    WORKING_WINDOW_WIDTH:large, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 1063
+           instret : 463
+branch misprediction : 43
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 4
+           D$ miss : 3
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+dist: 7
+
+
+----
+DATE: Wed Dec  3 08:45:49 PM EST 2025
+ID: 64_2_8_large_large_large_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:64, 
+    CACHE_ASSOCIATIVITY:2, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:large, 
+    SUPER_SCALAR_WIDTH:large, 
+    WORKING_WINDOW_WIDTH:large, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 1087
+           instret : 463
+branch misprediction : 46
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 4
+           D$ miss : 3
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+dist: 7
+
+
+----
+DATE: Wed Dec  3 08:51:13 PM EST 2025
+ID: 128_4_8_large_large_large_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:128, 
+    CACHE_ASSOCIATIVITY:4, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:large, 
+    SUPER_SCALAR_WIDTH:large, 
+    WORKING_WINDOW_WIDTH:large, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 1063
+           instret : 463
+branch misprediction : 43
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 4
+           D$ miss : 3
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+dist: 7
+
+
+----
+DATE: Wed Dec  3 08:56:34 PM EST 2025
+ID: 128_2_8_large_large_large_TAGELBPD
+CONFIG:
+    CACHE_LINE_SIZE:128, 
+    CACHE_ASSOCIATIVITY:2, 
+    NUM_TLB_WAYS:8, 
+    FRONTEND_WIDTH:large, 
+    SUPER_SCALAR_WIDTH:large, 
+    WORKING_WINDOW_WIDTH:large, 
+    BRANCH_PREDICTOR:TAGELBPD
+
+            cycles : 1087
+           instret : 463
+branch misprediction : 46
+control
+             flush : 12
+   branch resolved : 0
+           I$ miss : 4
+           D$ miss : 3
+        D$ release : 0
+         ITLB miss : 0
+         DTLB miss : 0
+       L2 TLB miss : 0
+dist: 7
+
+
+----
