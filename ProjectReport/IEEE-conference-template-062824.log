@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.27)  24 NOV 2025 18:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.27)  16 DEC 2025 19:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/ProjectProposal/IEEE-conference-template-062824.tex
-(/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/ProjectProposal/IEEE-conference-template-062824.tex
+**/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/ProjectReport/IEEE-conference-template-062824.tex
+(/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/ProjectReport/IEEE-conference-template-062824.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (./IEEEtran.cls
@@ -271,24 +271,24 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 35.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ] [2]
-Underfull \hbox (badness 1701) in paragraph at lines 213--214
+Underfull \hbox (badness 1701) in paragraph at lines 229--230
 \OT1/ptm/m/n/8 po-sium on Per-for-mance Anal-y-sis of Sys-tems and Soft-ware (IS-
  []
 
 
-Underfull \hbox (badness 3396) in paragraph at lines 213--214
+Underfull \hbox (badness 3396) in paragraph at lines 229--230
 \OT1/ptm/m/n/8 PASS), Raleigh, NC, USA, 2023, pp. 35-49, doi: 10.1109/IS-
  []
 
@@ -303,24 +303,22 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
-
-] (./IEEE-conference-template-062824.aux)
+[3] (./IEEE-conference-template-062824.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4186 strings out of 476106
+ 4187 strings out of 476106
  65374 string characters out of 5793932
- 1941975 words of memory out of 5000000
+ 1940975 words of memory out of 5000000
  26166 multiletter control sequences out of 15000+600000
- 594467 words of font info for 109 fonts, out of 8000000 for 9000
+ 595574 words of font info for 110 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 57i,11n,65p,500b,334s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,11n,65p,498b,334s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE-conference-template-062824.pdf (3 pages, 75875 bytes).
+Output written on IEEE-conference-template-062824.pdf (3 pages, 79214 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream

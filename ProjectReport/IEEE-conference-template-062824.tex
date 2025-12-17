@@ -11,7 +11,7 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Workload-Driven Optimization of RISC-V Core Configurations for Emerging Applications}
+\title{Workload-Driven Optimization of RISC-V Core Configurations for Embedded Applications}
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Ryan Frost}
 \IEEEauthorblockA{\textit{Bradley Dept. of ECE} \\
@@ -19,13 +19,7 @@
 Blacksburg, USA \\
 rfrost26@vt.edu}
 \and
-\IEEEauthorblockN{2\textsuperscript{nd} Enrique Maldonado}
-\IEEEauthorblockA{\textit{Bradley Dept. of ECE} \\
-\textit{Virginia Tech}\\
-Blacksburg, USA \\
-enriquem@vt.edu}
-\and
-\IEEEauthorblockN{3\textsuperscript{rd} Wangzhi Zhan}
+\IEEEauthorblockN{2\textsuperscript{rd} Wangzhi Zhan}
 \IEEEauthorblockA{\textit{Bradley Dept. of ECE} \\
 \textit{Virginia Tech}\\
 Blacksburg, USA \\
@@ -35,46 +29,68 @@ wzhan24@vt.edu}
 \maketitle
 
 \begin{abstract}
-The large-scale use of highly repetitive algorithms in fields such as machine
-learning and signal processing creates an opportunity to improve efficiency with
-processor cores designed for specific types of workloads rather than the traditional
-general purpose processor core. This project addresses the systematic
-categorization of applications based on execution needs and connects those needs
-to specific processor configurations for optimal performance. Using RISC-V
-instruction set architecture and Verilator simulations, we will analyze a number of
-trial configurations for each defined category of workloads, and we will optimize one
-specific configuration for each category. The effectiveness of these optimized
-configurations will be tested by running both category-specific benchmarks and
-generic benchmarks. This will show how optimizing for specific workloads will
-improve efficiency for those categories over a generic core.
+General purpose proecssors often take up too much space and too much power
+for specific embedded applications that require only a fraction of the provided
+resources. This project utilizes a new design pipeline to systematically test
+the RISC-V Berkeley Out-of-Order Machine (BOOM) on specific embedded workloads.
+The BOOM core's parameters are changed on a granular level, manipulating 
+frontend widths, scalar widths, reorder buffer sizes, cache size and associativity,
+translation lookaside buffer, and branch predictors. The four workloads tested are
+Dijkstra's Algorithm, Advanced Encryption Standard (AES), Fast Fourier Transform
+(FFT), and Huffman Encoding.
+
+The key metric analyzed is Instructions per Cycle (IPC) over Gate Count, which
+represents performance per chip area that is relevant for embedded applications.
+IPC is calculated using Chipyard and Verilator, and Gate Count is calculated 
+using Yosys synthesis. Our results indicate that larger chip sizes have
+diminishing return, and that a smaller, more specific configuration has the
+best performance per area. This shows that targeted hardware design can lower
+chip area while maintaining similar performance.
 \end{abstract}
 
 \begin{IEEEkeywords}
-architecture, RISC-V, Verilator, optimization, benchmarks.
+embedded, BOOM, Yosys, IPC, Gate Count
 \end{IEEEkeywords}
 
 \section{Introduction}
-The increasing diversity of computational workloads drives a need for more
-specific processor cores tailored to a specific category of application. From machine
-learning to signal processing, new algorithms are being developed that have
-drastically different execution needs. The typical generic processor is becoming
-increasingly outdated for these specific tasks. The performance and power metrics
-for generic chips are falling behind newly designed specialized chips, as chip
-designers and software engineers try to extort every bit of efficiency.
+Embedded devices are becoming ever more prevelent in the modern age. These devices 
+often have unique workloads, and the size and power efficiency of the chips for 
+these devices is often just as important as the actual performance. General 
+purpose processors typically focus less on power and space, opting for more 
+advanced branch predictors, larger issue widths, and larger caches. However,
+these processors can result in extra resources that are not fully utilized 
+by more simple embedded workloads. A processor with more silicon area typically 
+correlates to greater power consumption, which can be detrimental to a 
+constrained embedded environment.
 
-\subsection{Project Goal}
+The modularity of the RISC-V BOOM core presents an opportunity to analyze the 
+space efficiency of specific chip configurations. Designing the most opitmal 
+design is challenging because of the interconnected dependencies of the 
+core parameters. Increasing one aspect of the chip has cascading effects on 
+how well the other resources are used.
 
-The main justification for this project is the need for a systematic method to connect
-new and emerging applications and the many different configurable parameters of a
-processor core. Optimizing for generic benchmarks is not enough anymore, as they
-fail to represent the unique execution patterns used in specific use cases.
+In this project, we evaluate the trade-offs between different chip configurations
+and their impact on the area efficiency. We use UC Berkeley's BOOM core and
+Yosys to systematically evaluate performance using IPC and are using Gate Count.
+This metric informs our decision on the most area efficient configuration for
+embedded workloads.
 
-This project seeks to address this challenge. By systematically categorizing new
-algorithms from a variety of different areas, we will create specific classes based on
-exception needs. For each category, we will narrow down a fine-tuned configuration
-that will work best for that specific type of application. This will highlight the
-importance of blending software design with hardware design, and show how
-processor parameters can make a big difference in the latest algorithm research.
+\subsection{Workloads}
+
+\begin{itemize}
+\item \textbf{Dijkstra's Algorithm}: Used in robotics and autonomous vehicles for pathfinding and decision making.
+\item \textbf{Advanced Encryption Standard (AES)}: Used in security and cryptography for secure data transmission.
+\item \textbf{Fast Fourier Transform (FFT)}: Used in digital signal processing for sensor data analysis.
+\item \textbf{Huffman Encoding}: Used to compress data before transmission between devices
+\end{itemize}
+
+\subsection{Contributions}
+
+\begin{itemize}
+\item \textbf{Systematic Design Analysis}: Seven different core parameters are manipulated and the resulting change in performance and area is analyzed.
+\item \textbf{Pipeline Automation}: Candidate design configurations are easily created and supported by a modular scala file and Yosys synth file.
+\item \textbf{Workload-Driven Optimization}: Specific workloads are used to validate performance for different embedded uses.
+\end{itemize}
 
 \section{Related Work}
 Newly proposed algorithms across the software engineering fields have yet to be
