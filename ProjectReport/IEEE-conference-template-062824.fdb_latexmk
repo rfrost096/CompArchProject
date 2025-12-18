@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1766033257.34908 "/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/ProjectReport/IEEE-conference-template-062824.tex" "IEEE-conference-template-062824.pdf" "IEEE-conference-template-062824" 1766033258.0894 0
+["pdflatex"] 1766033650.37109 "/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/ProjectReport/IEEE-conference-template-062824.tex" "IEEE-conference-template-062824.pdf" "IEEE-conference-template-062824" 1766033651.03246 0
   "/etc/texmf/web2c/texmf.cnf" 1759180949.58728 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/ProjectReport/IEEE-conference-template-062824.tex" 1766033256.36488 22274 8f25aeeffd211ce076f3be78dca41354 ""
+  "/home/ryan/VT/ComputerArchitecture/Project/CompArchProject/ProjectReport/IEEE-conference-template-062824.tex" 1766033650.17214 22342 cc1a94eef0d51a705c857515c529f3d5 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -76,8 +76,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1761592902.52321 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1761592964 6831104 a6760433982d278379c01782ecb087a9 ""
-  "IEEE-conference-template-062824.aux" 1766033258.02887 3853 321da4163722672a3ff2f57db6c9a68a "pdflatex"
-  "IEEE-conference-template-062824.tex" 1766033256.36488 22274 8f25aeeffd211ce076f3be78dca41354 ""
+  "IEEE-conference-template-062824.aux" 1766033650.96914 3853 321da4163722672a3ff2f57db6c9a68a "pdflatex"
+  "IEEE-conference-template-062824.tex" 1766033650.17214 22342 cc1a94eef0d51a705c857515c529f3d5 ""
   "IEEEtran.cls" 1765924812.63782 288304 b67b6fc6c2abb39f9b461923f5199343 ""
   "Workflow.png" 1766019630.91017 38434 3bd3f0a153defc59a2537d44c5789ef2 ""
   "big_graph.png" 1766028580.91996 45627 8ff462e55af3123041be64df7199a400 ""

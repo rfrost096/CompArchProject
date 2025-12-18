@@ -15,9 +15,10 @@ The repository is meant to be run on linux (developed on Ubuntu).
 4. Edit pipeline.sh with your binary name and the configs you want (options are displayed in pipeline.sh)
 
 ## Run pipeline
-1. cd to chipyard/sims/verilator
-2. Run pipeline.sh from inside that directory
-3. The pipeline takes a while to run but will keep you updated
+1. Edit pipeline.sh to use your workload
+2. cd to chipyard/sims/verilator
+3. Run pipeline.sh from inside that directory
+4. The pipeline takes a while to run but will keep you updated
 
 # Comments
 A lot of comments provide extra detail, especially in ModularBoomConfig.scala to explain design decisions.
