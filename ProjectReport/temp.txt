@@ -1,0 +1,14 @@
+64 & 4 & 4 & medium & medium & medium & TAGELBPD \\ \hline
+64 & 4 & 8 & small & small & small & TAGELBPD \\ \hline
+64 & 4 & 8 & small & medium & small & TAGELBPD \\ \hline
+64 & 4 & 8 & small & medium & medium & TAGELBPD \\ \hline
+64 & 4 & 8 & medium & medium & small & TAGELBPD \\ \hline
+64 & 4 & 8 & medium & medium & medium & TAGELBPD \\ \hline
+64 & 4 & 8 & medium & large & medium & TAGELBPD \\ \hline
+64 & 4 & 8 & medium & large & large & TAGELBPD \\ \hline
+64 & 4 & 8 & large & large & medium & TAGELBPD \\ \hline
+64 & 4 & 8 & large & large & large & TAGELBPD \\ \hline
+64 & 4 & 8 & small & small & small & Boom2BPD \\ \hline
+64 & 4 & 8 & small & small & small & TAGELBPD \\ \hline
+64 & 2 & 8 & small & small & small & TAGELBPD \\ \hline
+32 & 4 & 8 & small & small & small & TAGELBPD \\ \hline

@@ -531,7 +531,7 @@ CONFIG:
 
         +----------Count including submodules.
         | 
- 1.18E+07 DigitalTop
+ 2.44E+07 DigitalTop
      1025   CLINT
         2     AsyncResetRegVec_w2_i0
         1     ResetCatchAndSync_d3

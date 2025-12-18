@@ -1,6 +1,7 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
 
+\usepackage{ulem}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
@@ -93,142 +94,330 @@ embedded workloads.
 \end{itemize}
 
 \section{Related Work}
-Newly proposed algorithms across the software engineering fields have yet to be
-analyzed on specific processor configurations. Existing algorithms are also showed
-to drastically depend on processor configurations for the best performance. One
-area of recent algorithm innovation is in real time systems.
+This project build on current research into hardware design automation and 
+embedded device optimization. The related research focused on here is focused
+on the development of the BOOM core, the existing design space exploration
+frameworks, and workload characterization.
 
-\subsection{Novel Real Time Algorithms}
-Real time algorithms are used by machines and autonomous devices to make quick
-and accurate decisions. The time sensitive nature of these applications means that
-processor cores with specific parameters for this task is highly valuable. More
-executions per second means more complex algorithms can be run in the same
-amount of time. There is also often an element of energy efficiency in real time
-systems, as they may be run on off-grid robots or in remote areas. Reducing main
-memory pulls reduces the energy demand from the main memory bus, resulting in a
-more energy efficient application.
+\subsection{BOOM Core}
+The Berkeley Out-of-Order Machine (BOOM) was introduced by Celio et al. in 2015
+\cite{b1}. Defined as a "synthesizable, parameterized, superscalar out-of-order
+RISC-V core," its development has allowed for iterative design of processor cores
+with a host of additional tools as part of the UC Berkeley chipyard. The 
+hardware is manipulated by changing Chisel files that map out the parameters of 
+the core. Several predesigned aspects of the core can be implemented without 
+having to modify Chisel files on a granular level.
 
-Four potential workloads related to real time robotics are collision detection, path
-finding, Fast Fourier transform (FFT), and finite impulse response filters (FIR). A
-novel collision detection algorithm is proposed and analyzed against existing
-algorithms by Wang et al. \cite{b1}. An extention to Dijkstra’s path finding algorithm is
-proposed for 3D path finding by Luo et al. \cite{b2}. Two foundation signal processing
-algorithms, FFT and FIR, are expanded upon by Zhao et al. and Zhang \& Jiang,
-respectively \cite{b3} \cite{b4}. These unique workloads may be used to develop processors for
-better real time robot performance.
+BOOM has already been iterated on into SonicBOOM (labeled as v3 in chipyard),
+as shown by Zhao et al. \cite{b2}. Notable additions in SonicBOOM are TAGE 
+branch prediction, support for the Rocket Custom Coprocessor interface (RoCC),
+and short-forwards branch omptimzations. This paper focuses on scaling up
+the BOOM core to match industry leading large superscalar cores, while we focus
+on scaling BOOM down to optimize for embedded workloads.
 
-\subsection{Vectorization}
-In addition to newly proposed algorithms, existing algorithms may be adjusted to better
-use vectorization. The vector extension for RISC-V ISA opens new opportunities for
-research and implementation. Some main features include the operation of
-arithmetic/logic and load/store instructions to operate on sets of vectors instead of
-individual data items, and having a vector register file that can hold a large number of
-elements. Vector architectures can also include multiple pipelines, leading to
-advantages in performance and scalability. The vector engine increases the amount of
-instruction level parallelism by performing functions such as vector renaming, issuing
-order and queues for instructions, pipeline interconnections, and receiving and
-managing instructions in the vector memory unit, detailed by C. Ramirez et al. \cite{b5}. The
-RISC-V Vectorized Benchmark suite offers a variety of benchmarks that can be used to
-test the performance of the architecture implementation.
+\subsection{Deisng Space Exploration (DSE)}
+DSE is the process of systematically iterating through
+parameters in a design space to approach the optimal solution. One approach
+to this with the BOOM core is presented by Bai et al. \cite{b3} as BOOM-Explorer.
+The authors' solution to the increasing design challenge of mangaging thousands
+of lines of architecture parameters was to invent a "active learning algorithm"
+called MicroAL. They focused on "exploring Pareto optimality", where two metrics
+have a trade-off relationship and the goal is to optimize for both. This is
+similar to the trade-off we optimize for between performance and area.
 
-Vectorization benefits various computational workloads. Secure hash algorithms like
-SHA-3 functions are used in a number of applications, requiring computational intensive 
-consumption, as demonstrated by H. Li et al.
-\cite{b6}. This is also true for astrophysical applications such as Octo-Tiger, as 
-demonstrated by P. Diehl et al. \cite{b7}. Machine learning algorithms can also benefit from 
-vectorization, demonstrated by V. Titopoulos et al. \cite{b8}. 
-This is expanded upon in the next subsection.
+Paletti et al. \cite{b4} instead focused on DSE for FPGA-based designs. They
+introduced Dovado, which is a CAD tool developed to support hardware developers
+when dealing with highly paramaterized RTL designs. Dovado takes parameter ranges
+and finds the "Pareto set" according to user defined metrics (example is
+achieveable frequency and LUTs usage). Dovando focuses on FPGA mapping
+using Vivado, while this project focuses on gate count for estimating the 
+area efficiency.
 
-\subsection{Machine Learning Applications}
-Recent studies on AI-related applications show that processor design
-and configuration strongly influence the efficiency of machine learning workloads. J. Kim
-et al.\cite{b9} propose a systolic–vector hybrid accelerator combining systolic arrays and
-vector processors to handle diverse DNN workloads efficiently. Bhattacharjee et al.\cite{b10}
-evaluate ML inference workloads on RISC-V systems using gem5 and an MLIR-based
-toolchain, showing that architecture parameters like cache size and pipeline type greatly
-affect performance. Gómez-Luna et al.\cite{b11} analyze memory-centric systems, finding
-that memory-bound ML algorithms such as decision trees and K-Means gain large
-speedups when data movement is minimized. C. Xu et al.\cite{b12} develop X-SET, a graph
-mining accelerator that mitigates irregular memory access patterns, while Y. Xiao et al
-\cite{b13} introduce GAHLS, a compiler-assisted hardware synthesis framework that maps
-LLVM IR graphs into heterogeneous accelerators for AI and graph analytics. Together,
-these works demonstrate that AI and graph workloads have diverse compute and
-memory demands, reinforcing our focus on exploring parameter-level optimization on
-general-purpose RISC-V cores for different application categories.
+Sausserea et al. \cite{b5} implemented their own "flexible pipeline" that focused
+on researching the impact of pipeline stages and pipeline depth in an in-order
+RISC-V core. They looked at impacts to frequency and resource utilization on
+both FPGAs and ASICs. This project focuses on the pipeline width and resources,
+contrary to this paper's focus on pipeline depth.
+
+\subsection{Workload Characterization}
+Workload characterization is understanding how a specific application will
+use/demand the resources of the processor it is run on. For embedded applications,
+Anuradha et al. \cite{b6} show how to characterize heterogeneoous processor 
+workloads. They inspired the selection of two of our workloads, Dijkstra's
+Algorithm and Fast Fourier Transform. The authors analyzed these two workloads
+along with others on FPGAs and DSPs. This work validates our diverse selection
+of workloads that we use to show how a generic BOOM core is inefficient in
+specific embedded applications.
 
 \section{Proposed Method}
-Our method systematically explores how key architectural parameters influence the
-performance of different application types and identifies optimized configurations for
-each category. We begin with the baseline RISC-V Rocket core and vary seven
-architectural parameters: cache size and associativity, pipeline depth, floating-point unit
-configuration, virtual memory settings, TLB size, branch predictor type, and clock
-frequency balance.
+We propose a workload-driven design space exploration pipeleine to approach the
+optimal BOOM core configuration for embedded applications evaluated by 
+performance over area.
 
-First, we vary these seven parameters individually for each application to measure how
-each one impacts performance metrics such as CPI and cache hit rate. This analysis
-will reveal which parameters are most critical for each application’s efficiency. Next, we
-categorize the applications based on their sensitivity to these parameters. Applications
-that show similar performance trends under parameter changes will be grouped into the
-same category.
+\subsection{Baseline Architecture}
+The baseline architecture for this project is the SonicBOOM (BOOMv3) core
+as implemented in UC Berkeley's chipyard repository. BOOMv3 is a superscalar
+out-of-order, synthesizable RISC-V core. This core was selected because of
+its modularity and existing research in its design space.
 
-For each category, we will design a specific configuration that combines the most
-beneficial parameter settings for that group of workloads. We will then run these
-specialized configurations across all applications within the category to evaluate their
-performance and consistency. Afterward, we will analyze the systematic results from all
-applications to identify trends and confirm the robustness of each configuration. Based
-on this analysis, we will derive a final optimized configuration that performs best on
-average within each category.
+The default BOOM core utilizes TAGE branch prediction, decodes RISC-V
+instructions into micro-ops, dispatches micro-ops into issue quues, executes
+operations, utilizes a load store queue for memory management, and retires
+instruciton in order, supporting precise exceptions. For this project, the 
+specific BOOM configuration we have assigned as default is the MediumBoomConfig. 
+The small, medium, and large configurations are options in seperate parameters 
+for optimization of the pipeline. 
 
-Finally, we will compare all category-specific configurations against the baseline using
-benchmark programs such as matrix multiplication. This comparison will quantify the
-benefit of specialization, demonstrating how tuning architectural parameters for specific
-workloads can yield higher performance and efficiency than a one-size-fits-all processor
-design.
+\subsection{Parameters}
+There are seven paramters to be changed in the pipeline, and they are listed
+below:
 
-\section{Evaluation Plan}
-This study will focus on the RISC-V Rocket Configuration and how it can be optimized
-to have better performance on different high performance computing applications. A
-wide range of applications were chosen including: Machine Learning, Signal
-Processing, Graph Analytics, Robotics, Astrophysics and Real-Time System
-Applications. Seven core configuration parameters will be fine-tuned in order to
-determine the best overall architecture for six applications. These parameters include
-cache size and associativity, pipeline architecture, virtual memory, and floating point
-unit, translation lookup buffer and branch predictor configurations. We will test the
-optimized configurations using the matrix multiplication benchmark. The evaluation
-metrics will be Cycles Per Instruction (CPI) and Cache Hit-Rate.
+\begin{table}[htbp]
+\caption{Pipeline Parameters}
+\begin{center}
+\begin{tabular}{|p{1.5cm}|p{2cm}|p{4cm}|}
+\hline
+\textbf{Name} & \textbf{Options} & \textbf{Description} \\ \hline
+Branch Predictor & TAGE, Boom2BPD & TAGE is larger but generally more accurate \\ \hline
+Cache Line Size & 32, 64 & Changes how much data is loaded per cache load \\ \hline
+Cache Associativity & 2, 4 & Increases cache complexity and reduces conflict misses \\ \hline
+TLB Ways & 4, 8 & Impacts virtual memory performance \\ \hline
+Frontend Width & small, medium, large & Defines fetch width, fetch buffer, fetch target queue \\ \hline
+Scalar Width & small, medium, large & Defines decode width and issue width \\ \hline
+Window Width & small, medium, large & Defines ROB entries, LSQ entries, max branch count \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{Automated Pipeline}
+We also propose a robust pipeline for testing user defined configurations. The
+pipeline itself has 4 stages: verifying config parameters, vefifying Scala
+compile, running simulation in Verilator, and calculating number of gates using
+Yosys. 
+
+The Scala config file is generated using a new ModularBoomConfig.scala file
+that takes the seven parameters as environment variables and changes the 
+BOOM config to make a compatible BOOM core with the specific configurations 
+selected. Some values are changed slightly from their definitions in the
+small, medium, and large BOOM configurations defined in the repository to make
+them compatible with each other. The fundamental process is shown in Figure 1.
+
+\clearpage
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\columnwidth]{Workflow.png} 
+\caption{Pipeline workflow to run analysis of user defined configurations.}
+\label{fig}
+\end{figure}
+
+\section{Evaluation Method}
+To assess BOOM core configurations against a theoretical embedded workload,
+we used 4 prominent embedded workloads and ran each using Verilator. The 
+performance counters in the BOOM config enable the recording of total cycles
+and instructions retired for IPC calculation. Small, Medium, and Large BOOM
+configs are mixed together for evaluation.
+
+\subsection{Workload Analysis}
+
+\begin{table}[htbp]
+\caption{Workload Characteristics}
+\begin{center}
+\begin{tabular}{|p{1.5cm}|p{2cm}|p{4cm}|}
+\hline
+\textbf{Workload} & \textbf{Application} & \textbf{Characteristics} \\ \hline
+Dijkstra's Algorithm & Robot Pathfinding & A lot of pointer chasing from the irregular memory access when access each node \cite{b7}. Branches are also data-dependent, testing the branch predictor. \\ \hline
+AES-128 Encryption & IoT Security & A lot of integer bitwise processing focusing on ALU throughput and cache bandwidth. \\ \hline
+FFT & Signal Processing & Floating point utilization and predictable memory accesses. \\ \hline
+Huffman Encoding & Encoding for Transmission & Tree traversal with many branches tesing branch target buffer. \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{Evaluation Metrics}
+The efficiency of a configuration is determined by dividing Instructions per
+Cycle from the Verilator simulation by the total Gate Count from the Yosys
+synthesis. 
+
+\begin{equation}
+\text{Efficiency} = \frac{\text{Instructions Per Cycle (IPC)}}{\text{Gate Count}}
+\end{equation}
+
+The Verilator simulation provides cycle accurate metrics for the
+BOOM core configuration. Yosys provides a generic synthesis of the core. The
+Yosys synthesis typically relies on SRAM libraries to accurately determine 
+the size of the cache. The available libraries are not extensive enough for
+the possible configurations and utilizing a tool such as OpenRAM to generate
+them proved to be difficult. Crucially, Yosys instead represents the SRAM
+as flip-flops, which has a major impact on the number of gates calculated
+for the cache.
+
+\begin{table}[htbp]
+\caption{Tested Configurations}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+CLS & Assoc. & TLB & Frontend & Scalar & Window & BPD \\ \hline
+64 & 4 & 8 & small & small & small & TAGE \\ \hline
+64 & 4 & 8 & small & medium & small & TAGE \\ \hline
+64 & 4 & 8 & small & medium & medium & TAGE \\ \hline
+64 & 4 & 8 & medium & medium & small & TAGE \\ \hline
+64 & 4 & 8 & medium & medium & medium & TAGE \\ \hline
+64 & 4 & 8 & medium & large & medium & TAGE \\ \hline
+64 & 4 & 8 & medium & large & large & TAGE \\ \hline
+64 & 4 & 8 & large & large & medium & TAGE \\ \hline
+64 & 4 & 8 & large & large & large & TAGE \\ \hline
+64 & 4 & 4 & medium & medium & medium & TAGE \\ \hline
+64 & 4 & 8 & small & small & small & Boom2 \\ \hline
+64 & 4 & 8 & small & small & small & TAGE \\ \hline
+64 & 2 & 8 & small & small & small & TAGE \\ \hline
+32 & 4 & 8 & small & small & small & TAGE \\ \hline
+\multicolumn{7}{l}{$^{\mathrm{a}}$CLS: Cache Line Size} \\
+\multicolumn{7}{l}{$^{\mathrm{a}}$Assoc: Cache Associativity} \\
+\multicolumn{7}{l}{$^{\mathrm{a}}$TLB: Translation Lookaside Buffer Ways} \\
+\multicolumn{7}{l}{$^{\mathrm{a}}$BPD: Branch Predictor}
+\end{tabular}
+\end{center}
+\end{table}
+
+These configs test a myriad of mixes between small, medium, and large core
+parameters. The configurations focus on testing the scalar width with smaller
+and larger frontend and window width to try and get the most out of the more
+costly issue widths. The small configuration was used to test cache line size, 
+cache associativity, TLB ways, and branch predictor to more accurately represent 
+the kinds of small cores that typically run embedded workloads.
+
+\section{Evaluation Results}
+Evalution results are broken down by the scalar/issue width since it had the
+largest impact on gate count and by workload since ILP is a characteristic of 
+the software. 
+
+\subsection{Performance vs Area Analysis}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\columnwidth]{big_graph.png} 
+\caption{Performance vs Area seperated by scalar width and workload.}
+\label{fig}
+\end{figure}
+
+There is a general positive correlation between instructions per cycle and 
+gate count, which was expected from the start. There is some variability between
+the workloads and how the added area impacts performance.
+
+AES has the highest scalability, which could be anticipated since the added 
+super scalar capability will most benefit the less time consuming bitwise
+operations.
+
+Dijkstra is the least scalable, with the highest IPC being about 0.9. There seems
+to be neglible performance gains for this particular algorithm. This is likely
+due to the heavy data dependency of the branches and the pointer chasing as 
+described before.
+
+Overall, this graph appears to show how there is a significant jump between the 
+small and medium scalar widths in terms of performance. The jump from medium to
+large scalar widths does not appear to have the same performance gains, although
+marginal gains are still present.
+
+\subsection{Impact of Scalar Width}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\columnwidth]{scaling.png} 
+\caption{Performance impact of scalar widths.}
+\label{fig}
+\end{figure}
+
+This figure shows the performance impact of the scalar widths. For Dijkstra, 
+AES, and Huffman workloads, there is less performance gain between medium and
+large than there was between small and medium. Interestingly, FFT saw greater
+performance gains from medium to large. This is the only floating point workload,
+which may exploit more instruction level parallelism as more operations can 
+be scheduled during the longer floating point operations. The FFT also has
+predictable memory accesses, so when the window width is increased along with
+the scalar width, the FFT workload can successfully execute more speculated
+operations than the other workloads.
+
+\subsection{Area Efficiency}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\columnwidth]{effeciency.png} 
+\caption{Pipeline workflow to run analysis of user defined configurations.}
+\label{fig}
+\end{figure}
+
+The area effeciency appears to actually trend upward, with the large
+scalar width configurations having the highest area effeciency. While the 
+increase in effeciency is less between medium and large as it is between small
+and medium, it still represents the best possible combination. One consideration
+is the impact of the bloated caches as a result of missing SRAM libraries 
+(described in section IV.B). The larger cache sizes reduce the relative increase
+in area due to the scalar width. Cache optimization is also part of the analysis,
+and analysis on a per-parameter basis would add another level of granular
+analysis in future work.
+
+\subsection{Discussion}
+The significant differences between workloads shows how understanding the
+target software can better inform hardware design decisions. Increasing the 
+scalar width and other resources does not always benefit embedded workloads. In
+this project, the only workload that saw increasing benefit was FFT. A medium
+workload would best suit this particular set of workloads, as the additional
+complexity of the larger cores does not justify the diminishing performance
+returns.
+
+Additional testing with branch prediction shows that TAGE is typically worth
+the added area cost over Boom2BPD. Increasing the cache line size also changed
+the size of the cache, resulting in better performance, but only marginally and
+not worth the added area. Cache associativity did not have a significant impact
+on performance. TLB ways had no impact on performance.
 
 \section{Timeline}
-The timeline for the project begins November 5th and ends December 17th. 
-There are 9 milestones identified to complete the project on time.
-A review period is included to receive feedback for a more polished final draft.
-Changes to the timeline will be documented for review in the final paper.
 
 \begin{itemize}
-\item 11/05 - 11/14 Get applications in a runnable state
-\item 11/05 - 11/14 Create pipeline for testing multiple configurations for multiple applications at once
-\item 11/14 - 11/19 Systematically categorize the applications based on parameter impact
-\item 11/19 - 11/21 Design multiple trial configurations for each identified category
-\item 11/21 - 12/03 Analyze trial configurations results and design most optimal configuration for each specific category
-\item 12/03 - 12/08 Compare with standardized benchmarks for each category and document overall performance between final configurations
-\item 12/08 - 12/10 Write paper draft
-\item 12/10 - 12/14 Receive feedback on draft
-\item 12/14 - 12/17 Finalize paper draft
+\item \sout{11/05 - 11/14 Get applications in a runnable state} Focused on area optimization rather than algorithm design
+\item \sout{11/05 - 11/14} 11/24 - 11/28 Create pipeline for testing multiple configurations for multiple applications at once
+\item \sout{11/14 - 11/19 Systematically categorize the applications based on parameter impact} 
+\item 11/28 - 12/1 Categorized performance based on scalar width
+\item \sout{12/03 - 12/08} 12/01 - 12/03 Compare with standardized benchmarks for each category and document overall performance between final configurations (for presentation)
+\item 12/03 - 12/14 Conduct additional analysis on workloads with more configurations and analyze results
+\item 12/14 - 12/17 Finalize report
 \end{itemize}
 
+The initial proposal focused on testing new algorithms on different core 
+configurations, but we pivoted from the algorithm-focused project to focus on
+area optimization. Pipeline development took about a week as expected once we
+started working on it. There was a bit of a rush to get preliminary results in 
+for the presentation. There was some disconnect between the original plan and
+the new direction for the presentation, but they have been resolved for this
+report. Overall, the timeline was pretty accurate in terms of time taken, although
+there were definetly periods of cruch time to meet deadlines. Specifically, 
+getting the first Dijkstra's algorithm all the way through the pipeline in one
+go was challenging and required many bug fixes. The result was a more resilient
+pipeline for the other workloads to run smoothly through.
+
+\section{Contributions}
+
+Ryan Frost Contributions:
+\begin{itemize}
+\item Pipeline Development
+\item Proposed Method
+\item Evaluation
+\end{itemize}
+
+Wangzhi Zhan Contributions:
+\begin{itemize}
+\item Workload Justification
+\item Related Work
+\item Pipeline Execution
+\end{itemize}
+
+
 \begin{thebibliography}{00}
-\bibitem{b1} B. Wang, Z. Ferguson, T. Schneider, X. Jiang, M. Attene, and D. Panozzo. 2021. A Large-scale Benchmark and an Inclusion-based Algorithm for Continuous Collision Detection. ACM Trans. Graph. 40, 5, Article 188 (October 2021), 16 pages. https://doi.org/10.1145/3460775
-\bibitem{b2} M. Luo, X. Hou and J. Yang, "Surface Optimal Path Planning Using an Extended Dijkstra Algorithm," in IEEE Access, vol. 8, pp. 147827-147838, 2020, doi: 10.1109/ACCESS.2020.3015976.
-\bibitem{b3} X. Zhang and S. Jiang, "Application of Fourier Transform and Butterworth Filter in Signal Denoising," 2021 6th International Conference on Intelligent Computing and Signal Processing (ICSP), Xi'an, China, 2021, pp. 1277-1281, doi: 10.1109/ICSP51882.2021.9408933.
-\bibitem{b4} S. Zhao, Y. S. Shmaliy, C. K. Ahn and F. Liu, "Self-Tuning Unbiased Finite Impulse Response Filtering Algorithm for Processes With Unknown Measurement Noise Covariance," in IEEE Transactions on Control Systems Technology, vol. 29, no. 3, pp. 1372-1379, May 2021, doi: 10.1109/TCST.2020.2991609.
-\bibitem{b5} Cristóbal Ramírez, César Alejandro Hernández, O. Palomar, Osman Ünsal, Mario Alberto García-Ramírez, and A. Cristal, “A RISC-V Simulator and Benchmark Suite for Designing and Evaluating Vector Architectures,” ACM Transactions on Architecture and Code Optimization, vol. 17, no. 4, pp. 1–30, Nov. 2020, doi: https://doi.org/10.1145/3422667.
-\bibitem{b6} H. Li, N. Mentens and S. Picek, "Maximizing the Potential of Custom RISC-V Vector Extensions for Speeding up SHA-3 Hash Functions," 2023 Design, Automation and Test in Europe Conferencea and Exhibition (DATE), Antwerp, Belgium, 2023, pp. 1-6, doi: 10.23919/DATE56975.2023.10137009.
-\bibitem{b7} P. Diehl et al., “Preparing for HPC on RISC-V: Examining Vectorization and Distributed Performance of an Astrophysics Application with HPX and Kokkos,” ARXIV, pp. 1656–1665, Nov. 2024, doi: https://doi.org/10.1109/scw63240.2024.00207.
-\bibitem{b8} V. Titopoulos, K. Alexandridis, and G. Dimitrakopoulos, “Vectorized FlashAttention with Low-cost Exponential Computation in RISC-V Vector Processors,” arXiv.org, 2025. https://arxiv.org/abs/2510.06834 (accessed Oct. 29, 2025).
-\bibitem{b9} J.-H. Kim, S. Yoo, S. Moon, and J.-Y. Kim, “Exploration of Systolic-Vector Architecture with Resource Scheduling for Dynamic ML Workloads,” arXiv.org, 2022. https://arxiv.org/abs/2206.03060
-\bibitem{b10} D. Bhattacharjee, Anmol, T. Marinelli, K. Pathak, and P. Kourzanov, “Full-stack evaluation of Machine Learning inference workloads for RISC-V systems,” arXiv.org, 2024. https://arxiv.org/abs/2405.15380 (accessed Oct. 29, 2025).
-\bibitem{b11} J. Gómez-Luna et al., "Evaluating Machine LearningWorkloads on Memory-Centric Computing Systems," 2023 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), Raleigh, NC, USA, 2023, pp. 35-49, doi: 10.1109/ISPASS57527.2023.00013.
-\bibitem{b12} C. Xu, T. Shi, S. Sun, J. Zhai, and X. Chen, “X-SET: An Efficient Graph Pattern Matching Accelerator With Order-Aware Parallel Intersection Units,” ACM Digital Library, pp. 1505–1519, Oct. 2025, doi: https://doi.org/10.1145/3725843.3756112.
-\bibitem{b13} Y. Xiao, S. Nazarian, and P. Bogdan, “GAHLS: an optimized graph analytics based high level synthesis framework,” Scientific reports, vol. 13, no. 1, Dec. 2023, doi: https://doi.org/10.1038/s41598-023-48981-x.
+\bibitem{b1} C. Celio, D. Patterson, and K. Asanović, “The Berkeley Out-of-Order Machine (BOOM): An Industry- Competitive, Synthesizable, Parameterized RISC-V Processor,” 2015. Accessed: Dec. 18, 2025. https://www2.eecs.berkeley.edu/Pubs/TechRpts/2015/EECS-2015-167.pdf.
+\bibitem{b2} J. Zhao, B. Korpan, A. Gonzalez, and K. Asanovic, “SonicBOOM: The 3rd Generation Berkeley Out-of-Order Machine,” 2020. Available: https://carrv.github.io/2020/papers/CARRV2020\_paper\_15\_Zhao.pdf
+\bibitem{b3} C. Bai, Q. Sun, J. Zhai, Y. Ma, B. Yu and M. D. F. Wong, "BOOM-Explorer: RISC-V BOOM Microarchitecture Design Space Exploration Framework," 2021 IEEE/ACM International Conference On Computer Aided Design (ICCAD), Munich, Germany, 2021, pp. 1-9, doi: 10.1109/ICCAD51958.2021.9643455.
+\bibitem{b4} D. Paletti, D. Conficconi and M. D. Santambrogio, "Dovado: An Open-Source Design Space Exploration Framework," 2021 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW), Portland, OR, USA, 2021, pp. 128-135, doi: 10.1109/IPDPSW52791.2021.00027.
+\bibitem{b5} J. Saussereau, C. Jego, C. Leroux and J. -B. Begueret, "Design and Implementation of a RISC-V core with a Flexible Pipeline for Design Space Exploration," 2023 30th IEEE International Conference on Electronics, Circuits and Systems (ICECS), Istanbul, Turkiye, 2023, pp. 1-5, doi: 10.1109/ICECS58634.2023.10382774.
+\bibitem{b6} P. Anuradha, H. Rallapalli, G. Narasimha and S. M. Ahmed, "Efficient workload characterization technique for heterogeneous processors," 2015 IEEE International Advance Computing Conference (IACC), Banglore, India, 2015, pp. 812-817, doi: 10.1109/IADCC.2015.7154819.
+\bibitem{b7} J. . -S. Park, M. Penner and V. K. Prasanna, "Optimizing graph algorithms for improved cache performance," in IEEE Transactions on Parallel and Distributed Systems, vol. 15, no. 9, pp. 769-782, Sept. 2004, doi: 10.1109/TPDS.2004.44.
 \end{thebibliography}
 
 \end{document}
